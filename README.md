@@ -2,7 +2,7 @@
 Angular JS based solution for dashboard functionality
 
 It contains the fixes for the following:
-- ~~ Automate the listing of channel tabs on top 'Zomato' 'TripAdvisor' 'Facebook' etc, depending on which channels are returned in the API.~~ : Done
+- ~~Automate the listing of channel tabs on top 'Zomato' 'TripAdvisor' 'Facebook' etc, depending on which channels are returned in the API.~~ : Done
 - Activate the channel tabs
 - 'Share' popup
 - 'Settings' popup
