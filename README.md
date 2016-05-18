@@ -6,7 +6,7 @@ It contains the fixes for the following:
 - Activate the channel tabs
 - 'Share' popup
 - 'Settings' popup
-- Align the big bubble chart properly
+- ~~Align the big bubble chart properly~~ : ![alt text](http://findicons.com/files/icons/1588/farm_fresh_web/32/tick.png "Done")
 - Make the question cards smaller in size. They are too big right now.
 - ~~On hovering over the bubble chart, just show the Y axis value of the bubble so that its easier for someone to understand the chart.~~ : ![alt text](http://findicons.com/files/icons/1588/farm_fresh_web/32/tick.png "Done")
 - Template of URL of units. Currently it is "/survey/s:<parent_ID>/analysis?parent=true#/unit/1" which is wrong. Change this template to "/survey/s:<child_ID>/analysis"
