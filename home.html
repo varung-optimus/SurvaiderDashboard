@@ -150,7 +150,7 @@
             <line x1="30" y1="20" x2="30" ng-attr-y2="{{unitsGraph.height - 20}}" stroke="#979797" stroke-width="2" ></line>
             <line x1="30" ng-attr-y1="{{unitsGraph.height - 20}}" ng-attr-x2="{{unitsGraph.width - 20}}" ng-attr-y2="{{unitsGraph.height - 20}}" stroke="#979797" stroke-width="2" ></line>
             <g ng-repeat="unit in units" ng-init="$rootIndex = $index">
-              <g transform="translate(0,75)">
+              <g transform="translate({{$index*20}},75)">
                 <circle ng-repeat="feature in unit.features" ng-attr-cx="{{100 + 100*$rootIndex}}" ng-attr-cy="{{504 - 100*(feature.score)}}" r="10" ng-attr-fill="{{colors[$index%colors.length]}}">
                     <title>{{features[$index].label}} - {{feature.score}}</title>
                 </circle>
