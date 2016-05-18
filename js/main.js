@@ -83,7 +83,7 @@
     */
 
     $http.get(uri).success(function(data){
-
+    console.log(data);
       application.init(data);
       $scope.features = application.features;
       $scope.units = application.units;

@@ -24,7 +24,6 @@
     /* Uses Class :: feature
     * Constructor(Number id, String label)
     */
-
     self.features = [];
     self.setFeaturesData(data['parent_survey']['responses'][0]['options_code']);
     self.setFeaturesScore(data['parent_survey']['responses'][0]['avg_rating']);
@@ -127,12 +126,12 @@
                          {'fillColor': barColorsForAllBars['positive']}
                         ]
             };
-            
+
         this.sentiments.push(graphData);
         // console.log(graphData);
     }
   }
-  
+
   app.prototype.setFeaturesData = function(featuresData){
     var self = this;
     var index = 0;

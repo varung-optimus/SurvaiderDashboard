@@ -97,8 +97,13 @@
     <nav>
       <ul>
         <li class="tab-current"><a href="#section-1">Overall</a></li>
-        <li><a href="#section-1">Tripadvisor</a></li>
-        <li><a href="#section-1">Facebook</a></li>
+
+        <li ng-repeat="item in sentiments">
+            <a href="#section-1">{{item.label}}</a>
+        </li>
+
+        <!-- <li><a href="#section-1">Tripadvisor</a></li>
+        <li><a href="#section-1">Facebook</a></li> -->
       </ul>
     </nav>
 

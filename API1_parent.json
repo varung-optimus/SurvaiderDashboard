@@ -101,6 +101,11 @@
                 "negative": 12,
                 "neutral": 50,
                 "positive": 88
+            },
+            "Twitter": {
+                "negative": 2,
+                "neutral": 20,
+                "positive": 53
             }
         },
         "wordcloud": {
