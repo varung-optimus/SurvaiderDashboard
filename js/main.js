@@ -178,7 +178,7 @@
       // }
 
       // uri2 += '.json';
-      var uri2 = '/static/SurvaiderDashboard/API2_parent.json'
+      var uri2 = './API2_parent.json'
       /*
       ***********************************************
       ***********************************************

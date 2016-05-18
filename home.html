@@ -97,8 +97,6 @@
     <nav>
       <ul>
         <li class="tab-current"><a href="#section-1">Overall</a></li>
-        <!--li><a href="#section-1">Facebook</a></li>
-        <li><a href="#section-1">Twitter</a></li-->
         <li><a href="#section-1">Tripadvisor</a></li>
         <li><a href="#section-1">Facebook</a></li>
       </ul>
@@ -151,7 +149,7 @@
                 <circle ng-repeat="feature in unit.features" ng-attr-cx="{{100 + 100*$rootIndex}}" ng-attr-cy="{{504 - 100*(feature.score)}}" r="10" ng-attr-fill="{{colors[$index%colors.length]}}"></circle>
               </g>
               <a xlink:href="{{'#/unit/' + unit.id}}">
-              
+
               <!-- <a xlink:href="{{'http://localhost:5000/survey/s:' + unit.id + '/analysis'}}"> -->
                 <line ng-attr-x1="{{100 + 120*$rootIndex}}" ng-attr-x2="{{100 + 120*$rootIndex}}" ng-attr-y1="{{unitsGraph.height + 40 - 65}}" ng-attr-y2="{{unitsGraph.height + 40 - 55}}" stroke="#999" stroke-width="2"></line>
                 <circle ng-attr-cx="{{100 + 120*$rootIndex}}" ng-attr-cy="{{unitsGraph.height + 40}}" r="50" fill="#eee"></circle>
@@ -173,7 +171,7 @@
           </div>
 
         </div>
-         
+
             <!-- Unit:: Cards -->
         <div class="sv-unit-questions">
             <div ng-repeat="sentiment in sentiments">
@@ -182,7 +180,7 @@
                     <div class="sentiment-group" >
                         <h1 ng-bind="sentiment.label" class="ng-binding"></h1>
                     </div>
-                    
+
                     <div class="sentiment-body">
                         <div ng-repeat="item in sentiment.series ">
                             <h3>{{item}} Rating: {{sentiment.data[$index][0]}}</h3>
@@ -199,7 +197,7 @@
                 </li>
             </div>
         </div>
-         
+
         <div class="sv-unit-questions">
 
           <ul>
@@ -646,7 +644,7 @@
           </ul>
 
         </div>
-         
+
       </div>
 
     </div>
