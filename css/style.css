@@ -652,13 +652,25 @@ svg.long-text text {
 
 /*# sourceMappingURL=style.css.map */
 
-.md-toolbar-tools {
-    background-color: #6BA9D9;
+.md-toolbar-tools, ._md-thumb {
+    background-color: #6BA9D9 !important;
 }
 
 .md-button {
     background-color: #6BA9D9 !important;
     color: white !important;
+}
+
+.md-datepicker-button {
+    display: none !important;
+}
+
+md-switch {
+    margin: -5px 0 0 0 !important;
+}
+
+.md-checked ._md-bar {
+    background-color: #6BA9D9 !important;
 }
 
 .dialog-header-icon {

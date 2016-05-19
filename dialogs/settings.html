@@ -1,4 +1,4 @@
-<md-dialog aria-label="Settings"  ng-cloak>
+<md-dialog aria-label="Settings" style="width:100%;" ng-cloak>
   <form>
     <md-toolbar>
       <div class="md-toolbar-tools">
@@ -14,7 +14,31 @@
     </md-toolbar>
     <md-dialog-content>
       <div class="md-dialog-content">
-          
+          <div layout="row" layout-wrap>
+              <div flex="15">
+                  <label>Expire survey</label>
+              </div>
+              <div flex="30">
+                  <input type="date" />
+              </div>
+              <span flex="10"></span>
+              <div flex="15">
+                  <label>Pause survey</label>
+              </div>
+              <div flex="30">
+                  <md-switch ng-model="survey.isPaused" aria-label="Survey Pause">
+                  </md-switch>
+              </div>
+          </div>
+          <br/><br/>
+          <div layout="row">
+              <div flex="15">
+                  <label>Response Cap</label>
+              </div>
+              <div flex="75">
+                  <input name="postalCode" ng-model="survey.responseCap" placeholder = "123"/>
+              </div>
+          </div>
       </div>
     </md-dialog-content>
     <md-dialog-actions layout="row">
