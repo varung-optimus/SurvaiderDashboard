@@ -96,10 +96,12 @@
 
     <nav>
       <ul>
-        <li class="tab-current"><a href="#section-1">Overall</a></li>
+        <li ng-class="activeTab == overallTabLabel? 'tab-current': ''"
+            ng-click="switchTab(overallTabLabel)"><a>Overall</a></li>
 
-        <li ng-repeat="item in sentiments">
-            <a href="#section-1">{{item.label}}</a>
+        <li ng-repeat="item in sentiments" ng-class="activeTab == '{{item.label}}'? 'tab-current': ''"
+            ng-click="switchTab(item)">
+            <a>{{item.label}}</a>
         </li>
 
         <!-- <li><a href="#section-1">Tripadvisor</a></li>

@@ -31,7 +31,25 @@
 
   appModule.controller('HomeController', [ '$scope', '$http', function($scope, $http){
 
+    // This is used for Overall tab
+    $scope.overallTabLabel = 'all';
+
+    // Active tab
+    $scope.activeTab = $scope.overallTabLabel;
     $scope.isTicketModal = false;
+
+    $scope.switchTab = function(item) {
+        if (!item.label) {
+            $scope.activeTab = $scope.overallTabLabel;
+            return;
+        }
+        $scope.activeTab = item.label;
+    }
+
+    $scope.isTabSelected = function(item) {
+        console.log($scope.activeTab);
+        return $scope.activeTab == item.label;
+    }
 
     $scope.getTheMonthName = function(index){
 
