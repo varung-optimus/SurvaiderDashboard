@@ -146,11 +146,11 @@
 
             <svg ng-attr-width="{{unitsGraph.outerWidth}}" ng-attr-height="{{unitsGraph.outerWidth-100}}">
             <g ng-repeat="counter in makeANumberArray(6)" transform="translate(0,75)">
-              <line x1="30" ng-attr-y1="{{5 + 100*$index}}" ng-attr-x2="{{unitsGraph.width - 20}}" ng-attr-y2="{{5 + 100*$index}}" stroke="#DDDDDD" stroke-width="2" ></line>
+              <line x1="30" ng-attr-y1="{{5 + 100*$index}}" ng-attr-x2="{{unitsGraph.outerWidth - 20}}" ng-attr-y2="{{5 + 100*$index}}" stroke="#DDDDDD" stroke-width="2" ></line>
               <text x="10" ng-attr-y="{{5 + 100*$index}}" text-anchor="middle">{{6-counter}}</text>
             </g>
             <line x1="30" y1="20" x2="30" ng-attr-y2="{{unitsGraph.height - 20}}" stroke="#979797" stroke-width="2" ></line>
-            <line x1="30" ng-attr-y1="{{unitsGraph.height - 20}}" ng-attr-x2="{{unitsGraph.width - 20}}" ng-attr-y2="{{unitsGraph.height - 20}}" stroke="#979797" stroke-width="2" ></line>
+            <line x1="30" ng-attr-y1="{{unitsGraph.height - 20}}" ng-attr-x2="{{unitsGraph.outerWidth - 20}}" ng-attr-y2="{{unitsGraph.height - 20}}" stroke="#979797" stroke-width="2" ></line>
             <g ng-repeat="unit in units" ng-init="$rootIndex = $index">
               <g transform="translate({{$index*20}},75)">
                 <circle ng-repeat="feature in unit.features" ng-attr-cx="{{100 + 100*$rootIndex}}" ng-attr-cy="{{504 - 100*(feature.score)}}" r="10" ng-attr-fill="{{colors[$index%colors.length]}}">

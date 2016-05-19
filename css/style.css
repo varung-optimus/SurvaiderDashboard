@@ -203,8 +203,9 @@ button {
   background-color: #fff; }
 
 .units-graph {
-  width: 70%;
-  margin: 0 auto; }
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: scroll;}
 
 .sv-feature-label a {
   display: block;
