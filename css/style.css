@@ -619,6 +619,7 @@ button {
       content: "";
       display: table; }
     .tabs nav ul li {
+      cursor: pointer;
       float: left;
       background-color: #D8D8D8;
       vertical-align: bottom;
