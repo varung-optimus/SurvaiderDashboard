@@ -651,3 +651,17 @@ svg.long-text text {
   font-size: 24px; }
 
 /*# sourceMappingURL=style.css.map */
+
+.md-toolbar-tools {
+    background-color: #6BA9D9;
+}
+
+.md-button {
+    background-color: #6BA9D9 !important;
+    color: white !important;
+}
+
+.dialog-header-icon {
+    width: 30px;
+    margin: 0 10px -5px 0;
+}

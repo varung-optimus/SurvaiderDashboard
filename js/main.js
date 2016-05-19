@@ -1,6 +1,6 @@
 (function(window){
 
-  var appModule = angular.module('SurvaiderDashboard', ['ngRoute', 'chart.js']);
+  var appModule = angular.module('SurvaiderDashboard', ['ngRoute', 'chart.js', 'ngMaterial']);
   Chart.defaults.global['responsive'] = true;
   Chart.defaults.global['maintainAspectRatio'] = false;
 
@@ -13,7 +13,8 @@
   var SURVEY_ID = uri_dat.s_id;
   var PATHNAME = window.location.pathname;
 
-  appModule.controller('MainController', ['$scope','$http', '$location', function($scope, $http, $location){
+  appModule.controller('MainController', ['$scope','$http', '$location', '$mdDialog',
+  '$mdMedia', function($scope, $http, $location, $mdDialog, $mdMedia){
 
     application = new myapp();
     var uri = './API1_parent.json';
@@ -33,6 +34,41 @@
       }
       return temp;
     }
+
+    $scope.showModal = function(ev, modal) {
+    var useFullScreen = ($mdMedia('sm') || $mdMedia('xs'))  && $scope.customFullscreen;
+    $mdDialog.show({
+      controller: DialogController,
+      templateUrl: 'dialogs/' + modal + '.html',
+      parent: angular.element(document.body),
+      targetEvent: ev,
+      clickOutsideToClose:true,
+      fullscreen: useFullScreen
+    })
+    .then(function(answer) {
+      $scope.status = 'You said the information was "' + answer + '".';
+    }, function() {
+      $scope.status = 'You cancelled the dialog.';
+    });
+
+    $scope.$watch(function() {
+      return $mdMedia('xs') || $mdMedia('sm');
+    }, function(wantsFullScreen) {
+      $scope.customFullscreen = (wantsFullScreen === true);
+    });
+
+    function DialogController($scope, $mdDialog) {
+      $scope.hide = function() {
+        $mdDialog.hide();
+      };
+      $scope.cancel = function() {
+        $mdDialog.cancel();
+      };
+      $scope.answer = function(answer) {
+        $mdDialog.hide(answer);
+      };
+    }
+  };
 
   }]);
 
