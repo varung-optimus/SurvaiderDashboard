@@ -13,11 +13,13 @@
   var SURVEY_ID = uri_dat.s_id;
   var PATHNAME = window.location.pathname;
 
-  appModule.controller('MainController', ['$scope','$http', function($scope, $http){
+  appModule.controller('MainController', ['$scope','$http', '$location', function($scope, $http, $location){
 
     application = new myapp();
 
     $scope.colors = application.colors;
+    // Flag to show/hide the edit survey link
+    $scope.isEditSurveyEnabled = $location.search().parent;
 
     $scope.makeANumberArray = function(size){
       var temp = new Array(size);
@@ -29,7 +31,7 @@
 
   }]);
 
-  appModule.controller('HomeController', [ '$scope', '$http', function($scope, $http){
+  appModule.controller('HomeController', [ '$scope', '$http', '$location', function($scope, $http, $location){
 
     // This is used for Overall tab
     $scope.overallTabLabel = 'all';
