@@ -1462,9 +1462,9 @@
 
   appModule.config(['$routeProvider', function($routeProvider){
     $routeProvider
-    .when('/unit/:id', {
+    .when('/survey/:a/analysis', {
       controller: 'UnitController',
-      templateUrl: '/static/SurvaiderDashboard/unit.html'
+      templateUrl: './unit.html'
     })
 
     // .when('/overallAnalytics', {
