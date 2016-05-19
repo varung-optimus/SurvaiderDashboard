@@ -13,6 +13,7 @@
     this.totalRespondents = [];
     this.companyName = [];
     this.unitName = [];
+    this.unitId = '';
   }
 
   //Initializer
@@ -32,6 +33,7 @@
     self.setTotalRespondents(data['parent_survey']['responses'][0]['total_resp']);
     self.setCompanyName(data['parent_survey']['meta']['company']);
     self.setUnitName(data['parent_survey']['meta']['unit_name']);
+    self.setUnitId(data['parent_survey']['meta']['id']);
     // self.unitName = data['parent_survey']['meta'].unit_name;
     // alert(self.unitName);
 
@@ -73,6 +75,78 @@
     var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
 
     return months[index % months.length];
+  }
+
+  app.prototype.getApi1ParentData = function(uri, $http, $scope, application, isHome) {
+      $http.get(uri).success(function(data){
+        application.init(data);
+        $scope.unitId = application.unitId;
+        if (isHome) {
+            $scope.features = application.features;
+            $scope.units = application.units;
+            $scope.ratingPoints = application.ratingPoints;
+            $scope.dates = application.dates;
+            $scope.sentiments = application.sentiments;
+            $scope.totalRespondents = application.totalRespondents;
+            $scope.companyName = application.companyName;
+            // $scope.unitName = application.unitName;
+            // alert("Homecontroller, API1 call");
+
+            var numberOfFeatures = $scope.features.length;
+
+            $scope.theGraph = {
+              totalMaxGraphHeight: 175,
+              blockWidth: 225,
+              barWidth: 25,
+              barMargin: 5,
+              barHeight: 150
+            };
+
+            $scope.theGraph['totalGraphWidth'] = ($scope.theGraph.barWidth)*(numberOfFeatures) + ($scope.theGraph.barMargin)*(numberOfFeatures-1);
+
+            $scope.theGraph['groupToTranslate'] = (($scope.theGraph.blockWidth) - ($scope.theGraph.totalGraphWidth)) / 2;
+
+            $scope.theGraph['sumOfScore'] = $scope.features.reduce(function(a,b){ return a.score + b.score });
+
+
+            $scope.ratingGraph = {
+              graphHeight: 200,
+              pointRadius: 7,
+              borderWidth: 20
+            }
+
+            $scope.ratingGraph['maxOrdinate'] = $scope.maxOrdinateFrom2DPointArray($scope.ratingPoints);
+
+            $scope.ratingGraph['abscissaSpacer'] = 60;
+
+            if ($scope.ratingPoints.length*65 < 695) {
+                  $scope.ratingGraph['graphWidth']=695;
+            }else{
+                  $scope.ratingGraph['graphWidth'] = $scope.ratingPoints.length*65;
+            }
+
+
+
+            $scope.ticketDetails = {
+              x: 9,
+              y: 2
+            };
+
+            var tempArray = new Array(10);
+
+
+            $scope.unitsGraph = {
+              width: 600,
+              height: 600,
+              pointRadius: 10,
+              outerWidth: 800,
+              outerHeight: 800
+            }
+
+            $scope.unitsGraph['addUnitX'] = $scope.units.length;
+
+        }
+      });
   }
 
   app.prototype.setSentimentsData = function(sentiments){
@@ -164,6 +238,11 @@
   app.prototype.setUnitName = function(unit_Name){
     var self = this;
     self.unitName = unit_Name;
+  }
+
+  app.prototype.setUnitId = function(unit_id){
+    var self = this;
+    self.unitId = unit_id;
   }
 
   app.prototype.setCompanyName = function(company_Name){

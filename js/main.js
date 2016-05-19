@@ -16,7 +16,12 @@
   appModule.controller('MainController', ['$scope','$http', '$location', function($scope, $http, $location){
 
     application = new myapp();
-
+    var uri = './API1_parent.json';
+    /*
+    ***********************************************
+    ***********************************************
+    */
+    application.getApi1ParentData(uri, $http, $scope, application, false);
     $scope.colors = application.colors;
     // Flag to show/hide the edit survey link
     $scope.isEditSurveyEnabled = $location.search().parent;
@@ -101,75 +106,7 @@
     ***********************************************
     ***********************************************
     */
-
-    $http.get(uri).success(function(data){
-    console.log(data);
-      application.init(data);
-      $scope.features = application.features;
-      $scope.units = application.units;
-      $scope.ratingPoints = application.ratingPoints;
-      $scope.dates = application.dates;
-      $scope.sentiments = application.sentiments;
-      $scope.totalRespondents = application.totalRespondents;
-      $scope.companyName = application.companyName;
-      // $scope.unitName = application.unitName;
-      // alert("Homecontroller, API1 call");
-
-      var numberOfFeatures = $scope.features.length;
-
-      $scope.theGraph = {
-        totalMaxGraphHeight: 175,
-        blockWidth: 225,
-        barWidth: 25,
-        barMargin: 5,
-        barHeight: 150
-      };
-
-      $scope.theGraph['totalGraphWidth'] = ($scope.theGraph.barWidth)*(numberOfFeatures) + ($scope.theGraph.barMargin)*(numberOfFeatures-1);
-
-      $scope.theGraph['groupToTranslate'] = (($scope.theGraph.blockWidth) - ($scope.theGraph.totalGraphWidth)) / 2;
-
-      $scope.theGraph['sumOfScore'] = $scope.features.reduce(function(a,b){ return a.score + b.score });
-
-
-      $scope.ratingGraph = {
-        graphHeight: 200,
-        pointRadius: 7,
-        borderWidth: 20
-      }
-
-      $scope.ratingGraph['maxOrdinate'] = $scope.maxOrdinateFrom2DPointArray($scope.ratingPoints);
-
-      $scope.ratingGraph['abscissaSpacer'] = 60;
-
-      if ($scope.ratingPoints.length*65 < 695) {
-            $scope.ratingGraph['graphWidth']=695;
-      }else{
-            $scope.ratingGraph['graphWidth'] = $scope.ratingPoints.length*65;
-      }
-
-
-
-      $scope.ticketDetails = {
-        x: 9,
-        y: 2
-      };
-
-      var tempArray = new Array(10);
-
-
-      $scope.unitsGraph = {
-        width: 600,
-        height: 600,
-        pointRadius: 10,
-        outerWidth: 800,
-        outerHeight: 800
-      }
-
-      $scope.unitsGraph['addUnitX'] = $scope.units.length;
-
-
-    });
+    application.getApi1ParentData(uri, $http, $scope, application, true);
 
      //HTTP-MARK::- GET-THE-GRAPH-DATA-FOR-ALL-QUESTION-TYPES
     //previously:- dataUnit.json
