@@ -61,7 +61,7 @@
 
     if (data['parent_survey']['meta']['unit_name'] == "Parent Survey"){
       data.units.forEach(function(u, idx){
-        var tempUnit = new unit(idx+1, u['meta'].unit_name, u['responses'][1].avg_rating);
+        var tempUnit = new unit(u['meta'].id, u['meta'].unit_name, u['responses'][1].avg_rating);
 
         tempUnit.setFeaturesData(u['responses'][0].avg_rating);
 

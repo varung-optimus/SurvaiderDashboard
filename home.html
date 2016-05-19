@@ -157,8 +157,8 @@
                     <title>{{features[$index].label}} - {{feature.score}}</title>
                 </circle>
               </g>
-              <a xlink:href="{{'#/unit/' + unit.id}}">
-
+              <a xlink:href="{{'/survey/s:' + unit.id + '/analysis'}}">
+                  <!-- <a xlink:href="{{'#/unit/' + unit.id}}"> -->
               <!-- <a xlink:href="{{'http://localhost:5000/survey/s:' + unit.id + '/analysis'}}"> -->
                 <line ng-attr-x1="{{100 + 120*$rootIndex}}" ng-attr-x2="{{100 + 120*$rootIndex}}" ng-attr-y1="{{unitsGraph.height + 40 - 65}}" ng-attr-y2="{{unitsGraph.height + 40 - 55}}" stroke="#999" stroke-width="2"></line>
                 <circle ng-attr-cx="{{100 + 120*$rootIndex}}" ng-attr-cy="{{unitsGraph.height + 40}}" r="50" fill="#eee"></circle>
