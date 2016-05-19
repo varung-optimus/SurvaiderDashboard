@@ -3,7 +3,7 @@ Angular JS based solution for dashboard functionality
 
 It contains the fixes for the following:
 - ~~Automate the listing of channel tabs on top 'Zomato' 'TripAdvisor' 'Facebook' etc, depending on which channels are returned in the API.~~ : ![alt text](http://findicons.com/files/icons/1588/farm_fresh_web/32/tick.png "Done")
-- Activate the channel tabs
+- ~~Activate the channel tabs~~ : ![alt text](http://findicons.com/files/icons/1588/farm_fresh_web/32/tick.png "Done")
 - 'Share' popup
 - 'Settings' popup
 - ~~Align the big bubble chart properly~~ : ![alt text](http://findicons.com/files/icons/1588/farm_fresh_web/32/tick.png "Done")
