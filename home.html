@@ -114,7 +114,7 @@
       <div id="section-1">
 
         <!-- App::Features -->
-        <div class="sv-unit-features">
+        <div class="sv-unit-features" ng-show="activeTab == overallTabLabel">
 
           <ul>
 
@@ -124,7 +124,7 @@
               *** label
             -->
 
-            <li class="sv-unit-feature-block" ng-repeat="feature in features track by $index">
+            <li class="sv-unit-feature-block" ng-show="activeTab == overallTabLabel" ng-repeat="feature in features track by $index">
 
               <div class="unit-feature-score" style="background-color: {{colors[$index%colors.length]}}">
                 <h1 ng-bind="feature.score"></h1>
@@ -141,7 +141,7 @@
         </div>
 
         <!-- Units -->
-        <div class="sv-units">
+        <div class="sv-units" ng-show="activeTab == overallTabLabel">
           <div class="units-graph" style="padding: 2em">
 
             <svg ng-attr-width="{{unitsGraph.outerWidth}}" ng-attr-height="{{unitsGraph.outerWidth}}">
@@ -184,7 +184,8 @@
             <!-- Unit:: Cards -->
         <div class="sv-unit-questions">
             <div ng-repeat="sentiment in sentiments">
-                <li class="sv-unit-question-block ng-scope">
+                <li class="sv-unit-question-block ng-scope"
+                    ng-show="activeTab == sentiment.label || activeTab == overallTabLabel">
                     <div style="width: 33.333%; float: left">
                     <div class="sentiment-group" >
                         <h1 ng-bind="sentiment.label" class="ng-binding"></h1>
@@ -207,7 +208,7 @@
             </div>
         </div>
 
-        <div class="sv-unit-questions">
+        <div class="sv-unit-questions" ng-show="activeTab == overallTabLabel">
 
           <ul>
 
