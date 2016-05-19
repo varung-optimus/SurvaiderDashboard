@@ -200,8 +200,7 @@ button {
 .sv-features,
 .sv-units {
   padding: 2em 2.5em;
-  background-color: #fff;
-  margin: 4em 0; }
+  background-color: #fff; }
 
 .units-graph {
   width: 70%;
@@ -297,14 +296,21 @@ button {
     margin-top: 1.5em; }
 
 .sv-unit-questions {
-  margin-top: 2em;
   padding: 2em; }
 
 .sv-unit-question-block {
   margin-bottom: 2em;
-  padding: 4em 2em 8em 2em;
+  padding: 0.5em 0.25em 1em 0.5em;
   display: block;
   background-color: #FFFFFF; }
+
+.sv-unit-question-block h1 {
+    font-size: 1.1em !important;
+}
+
+.sv-unit-question-block h3 {
+    font-size: 0.9em !important;
+}
 
 .sv-unit-question-block::after {
   clear: both;

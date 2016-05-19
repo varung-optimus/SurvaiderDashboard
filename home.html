@@ -144,7 +144,7 @@
         <div class="sv-units" ng-show="activeTab == overallTabLabel">
           <div class="units-graph" style="padding: 2em">
 
-            <svg ng-attr-width="{{unitsGraph.outerWidth}}" ng-attr-height="{{unitsGraph.outerWidth}}">
+            <svg ng-attr-width="{{unitsGraph.outerWidth}}" ng-attr-height="{{unitsGraph.outerWidth-100}}">
             <g ng-repeat="counter in makeANumberArray(6)" transform="translate(0,75)">
               <line x1="30" ng-attr-y1="{{5 + 100*$index}}" ng-attr-x2="{{unitsGraph.width - 20}}" ng-attr-y2="{{5 + 100*$index}}" stroke="#DDDDDD" stroke-width="2" ></line>
               <text x="10" ng-attr-y="{{5 + 100*$index}}" text-anchor="middle">{{6-counter}}</text>
