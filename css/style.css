@@ -79,7 +79,7 @@ button {
   .sv-logo a {
     display: block;
     font-weight: 900;
-    color: white; }
+    color: white !important; }
 
 .sv-logo,
 .sv-header-nav {
@@ -110,7 +110,10 @@ button {
     border: 1px solid #8e8e8e;
     padding: 0.5em 1em;
     background-color: #7EFFE2;
-    color: #9B9B9B; }
+    color: #9B9B9B;}
+  h3 a, h3 a:hover {
+      color: black !important;
+      cursor: pointer;}
 
 /*---------------------------------------------------*/
 /*---------------------------------------------------*/
@@ -128,10 +131,12 @@ button {
   margin: 28px 0 0 28px; }
   .sv-sidebar-nav ul li {
     margin-bottom: 16px; }
-    .sv-sidebar-nav ul li a {
+    .sv-sidebar-nav ul li a,
+    .sv-sidebar-nav ul li a:hover {
       display: block;
-      color: #9B9B9B;
-      font-size: 20px; }
+      color: #9B9B9B !important;
+      font-size: 20px;
+      cursor: pointer;}
 
 /*---------------------------------------------------*/
 /*---------------------------------------------------*/
@@ -630,6 +635,7 @@ button {
         margin-top: -5px; }
       .tabs nav ul li a {
         padding: 0.75em 2.5em;
+        color: black !important;
         display: block; }
 
 .group-rating-graph,
