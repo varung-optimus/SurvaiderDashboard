@@ -7,28 +7,26 @@
 
   var application = null;
 
-  var uri_dat = UriTemplate.extract('/survey/s:{s_id}/analysis?parent={parent}',
+  var uri_dat = UriTemplate.extract('/survey/s:{s_id}/analysis?parent={parent}#/unit/{unitid}',
     window.location.pathname + window.location.search + window.location.hash);
 
   var SURVEY_ID = uri_dat.s_id;
   var PATHNAME = window.location.pathname;
 
-  appModule.controller('MainController', ['$scope','$http', '$location', '$mdDialog', '$mdMedia', function($scope, $http, $location, $mdDialog, $mdMedia){
+  appModule.controller('MainController', ['$scope','$http', '$location', '$mdDialog',
+  '$mdMedia', function($scope, $http, $location, $mdDialog, $mdMedia){
 
     application = new myapp();
-
+    var uri = './API1_parent.json';
+    /*
+    ***********************************************
+    ***********************************************
+    */
+    application.getApi1ParentData(uri, $http, $scope, application, false);
     $scope.colors = application.colors;
-
     // Flag to show/hide the edit survey link
-    var uri_dat = UriTemplate.extract('/survey/s:{s_id}/analysis?parent={parent}',
-    window.location.pathname + window.location.search + window.location.hash);
-    if (uri_dat.parent) {
-      $scope.isEditSurveyEnabled = true;
-    }
-    else {
-      $scope.isEditSurveyEnabled = false;
-    }
-    $scope.ParentId = uri_dat.s_id;
+    $scope.isEditSurveyEnabled = $location.search().parent;
+
     $scope.makeANumberArray = function(size){
       var temp = new Array(size);
       for (var i = 0; i < temp.length; i++) {
@@ -37,65 +35,63 @@
       return temp;
     }
 
-     $scope.showModal = function(ev, modal) {
-     var useFullScreen = ($mdMedia('sm') || $mdMedia('xs'))  && $scope.customFullscreen;
-     $mdDialog.show({
-       controller: DialogController,
-       templateUrl: './dialogs/' + modal + '.html',
-       parent: angular.element(document.body),
-       targetEvent: ev,
-       clickOutsideToClose:true,
-       fullscreen: useFullScreen
-     })
-     .then(function(answer) {
-       $scope.status = 'You said the information was "' + answer + '".';
-     }, function() {
-       $scope.status = 'You cancelled the dialog.';
-     });
+    $scope.showModal = function(ev, modal) {
+    var useFullScreen = ($mdMedia('sm') || $mdMedia('xs'))  && $scope.customFullscreen;
+    $mdDialog.show({
+      controller: DialogController,
+      templateUrl: 'dialogs/' + modal + '.html',
+      parent: angular.element(document.body),
+      targetEvent: ev,
+      clickOutsideToClose:true,
+      fullscreen: useFullScreen
+    })
+    .then(function(answer) {
+      $scope.status = 'You said the information was "' + answer + '".';
+    }, function() {
+      $scope.status = 'You cancelled the dialog.';
+    });
 
-     $scope.$watch(function() {
-       return $mdMedia('xs') || $mdMedia('sm');
-     }, function(wantsFullScreen) {
-       $scope.customFullscreen = (wantsFullScreen === true);
-     });
+    $scope.$watch(function() {
+      return $mdMedia('xs') || $mdMedia('sm');
+    }, function(wantsFullScreen) {
+      $scope.customFullscreen = (wantsFullScreen === true);
+    });
 
-     function DialogController($scope, $mdDialog, $location) {
-       $scope.surveyUrl = $location.absUrl();
-       $scope.hide = function() {
-         $mdDialog.hide();
-       };
-       $scope.cancel = function() {
-         $mdDialog.cancel();
-       };
-       $scope.answer = function(answer) {
-         $mdDialog.hide(answer);
-       };
-     }
-   };
-
+    function DialogController($scope, $mdDialog) {
+      $scope.hide = function() {
+        $mdDialog.hide();
+      };
+      $scope.cancel = function() {
+        $mdDialog.cancel();
+      };
+      $scope.answer = function(answer) {
+        $mdDialog.hide(answer);
+      };
+    }
+  };
 
   }]);
 
-  appModule.controller('HomeController', [ '$scope', '$http', '$location',function($scope, $http, $location){
+  appModule.controller('HomeController', [ '$scope', '$http', '$location', function($scope, $http, $location){
+
     // This is used for Overall tab
     $scope.overallTabLabel = 'all';
 
     // Active tab
     $scope.activeTab = $scope.overallTabLabel;
-
     $scope.isTicketModal = false;
 
     $scope.switchTab = function(item) {
-         if (!item.label) {
-             $scope.activeTab = $scope.overallTabLabel;
+        if (!item.label) {
+            $scope.activeTab = $scope.overallTabLabel;
             return;
-         }
-         $scope.activeTab = item.label;
+        }
+        $scope.activeTab = item.label;
     }
 
     $scope.isTabSelected = function(item) {
-         console.log($scope.activeTab);
-         return $scope.activeTab == item.label;
+        console.log($scope.activeTab);
+        return $scope.activeTab == item.label;
     }
 
     $scope.getTheMonthName = function(index){
@@ -121,79 +117,60 @@
     //HTTP-MARK::- Dashboard API Call which returns top-most line graph data
     //and unit-graph data
 
+    /*
+    ***********************************************
+    HACK FOR READING CUSTOM JSON FILE
+    ***********************************************
+    */
+
+    // var uri = '/static/SurvaiderDashboard/API1';
+    // var uri_dat = UriTemplate.extract('/survey/s:{s_id}/analysis?parent={parent}#/unit/{unitid}',
+    // window.location.pathname + window.location.search + window.location.hash);
+
+    // if (uri_dat.unitid == 0) {
+    //   uri += "_parent";
+    // }
+
+    // else {
+    //   uri += ("_"+uri_dat.unitid);
+    // }
+
+    // uri += '.json';
+
     var uri = './API1_parent.json';
-    // var uri = '/api/dashboard/'+uri_dat.s_id+'/all/response/true'
+    /*
+    ***********************************************
+    ***********************************************
+    */
+    application.getApi1ParentData(uri, $http, $scope, application, true);
 
-    $http.get(uri).success(function(data){
+     //HTTP-MARK::- GET-THE-GRAPH-DATA-FOR-ALL-QUESTION-TYPES
+    //previously:- dataUnit.json
+    // $http.get('http://localhost:10000/api/irapi/' + SURVEY_ID + '/0/0/response/true').success(function(data){
 
-      application.init(data);
-      $scope.features = application.features;
-      $scope.units = application.units;
-      $scope.ratingPoints = application.ratingPoints;
-      $scope.dates = application.dates;
-      $scope.sentiments = application.sentiments;
-      $scope.totalRespondents = application.totalRespondents;
-      $scope.companyName = application.companyName;
-      // $scope.unitName = application.unitName;
-      // alert("Homecontroller, API1 call");
+      /*
+      ***********************************************
+      HACK FOR READING CUSTOM JSON FILE
+      ***********************************************
+      */
 
-      var numberOfFeatures = $scope.features.length;
+      // var uri_dat = UriTemplate.extract('/survey/s:{s_id}/analysis?parent={parent}#/unit/{unitid}',
+      //     window.location.pathname + window.location.search + window.location.hash);
 
-      $scope.theGraph = {
-        totalMaxGraphHeight: 175,
-        blockWidth: 225,
-        barWidth: 25,
-        barMargin: 5,
-        barHeight: 150
-      };
+      // var uri2 = '/static/SurvaiderDashboard/API2';
 
-      $scope.theGraph['totalGraphWidth'] = ($scope.theGraph.barWidth)*(numberOfFeatures) + ($scope.theGraph.barMargin)*(numberOfFeatures-1);
-
-      $scope.theGraph['groupToTranslate'] = (($scope.theGraph.blockWidth) - ($scope.theGraph.totalGraphWidth)) / 2;
-
-      $scope.theGraph['sumOfScore'] = $scope.features.reduce(function(a,b){ return a.score + b.score });
+      // console.log(uri_dat.unitid);
 
 
-      $scope.ratingGraph = {
-        graphHeight: 200,
-        pointRadius: 7,
-        borderWidth: 20
-      }
+      // if (uri_dat.unitid == 0) {
+      //   uri2 += "_parent";
+      // }
 
-      $scope.ratingGraph['maxOrdinate'] = $scope.maxOrdinateFrom2DPointArray($scope.ratingPoints);
+      // else {
+      //   uri2 += ("_"+uri_dat.unitid);
+      // }
 
-      $scope.ratingGraph['abscissaSpacer'] = 60;
-
-      if ($scope.ratingPoints.length*65 < 695) {
-            $scope.ratingGraph['graphWidth']=695;
-      }else{
-            $scope.ratingGraph['graphWidth'] = $scope.ratingPoints.length*65;
-      }
-
-
-
-      $scope.ticketDetails = {
-        x: 9,
-        y: 2
-      };
-
-      var tempArray = new Array(10);
-
-
-      $scope.unitsGraph = {
-        width: 600,
-        height: 600,
-        pointRadius: 10,
-        outerWidth: 800,
-        outerHeight: 800
-      }
-
-      $scope.unitsGraph['addUnitX'] = $scope.units.length;
-
-
-    });
-
-
+      // uri2 += '.json';
       var uri2 = './API2_parent.json'
       /*
       ***********************************************
@@ -809,13 +786,10 @@
     ***********************************************
     */
 
-    var uri = './API1';
-    // var uri_dat = UriTemplate.extract('/survey/s:{s_id}/analysis?parent={parent}#/unit/{unitid}',
-      var uri_dat = UriTemplate.extract('/survey/s:{unitid}/analysis?parent={parent}',
+    var uri = '/static/SurvaiderDashboard/API1';
+    var uri_dat = UriTemplate.extract('/survey/s:{s_id}/analysis?parent={parent}#/unit/{unitid}',
     window.location.pathname + window.location.search + window.location.hash);
-    // uri += ("_"+uri_dat.unitid);
-    var extracted_id = $routeParams.unitid.replace(/s:/g,'')
-    uri += ("_"+extracted_id);
+    uri += ("_"+uri_dat.unitid);
     uri += '.json';
     /*
     ***********************************************
@@ -862,12 +836,10 @@
       ***********************************************
       */
 
-    var uri2 = './API2';
-    var uri_dat = UriTemplate.extract('/survey/s:{s_id}/analysis?parent={parent}',
+    var uri2 = '/static/SurvaiderDashboard/API2';
+    var uri_dat = UriTemplate.extract('/survey/s:{s_id}/analysis?parent={parent}#/unit/{unitid}',
     window.location.pathname + window.location.search + window.location.hash);
-    if (!uri_dat.parent) {
-      uri2 += ("_"+uri_dat.s_id);
-    }
+    uri2 += ("_"+uri_dat.unitid);
     uri2 += '.json';
       /*
       ***********************************************
@@ -1489,19 +1461,15 @@
   var STATIC_URL = '/'
 
   appModule.config(['$routeProvider', function($routeProvider){
-    // $locationProvider.html5Mode({
-    //     enabled: true,
-    //     requireBase: false
-    // });
     $routeProvider
-    .when('/survey/:unitid/analysis', {
+    .when('/survey/:a/analysis', {
       controller: 'UnitController',
       templateUrl: './unit.html'
     })
 
     // .when('/overallAnalytics', {
     //   controller: 'OverallAnalyticsController',
-    //   templateUrl: './overallAnalytics.html'
+    //   templateUrl: '/static/SurvaiderDashboard/overallAnalytics.html'
     // })
 
     .otherwise({

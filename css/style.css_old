@@ -110,11 +110,11 @@ button {
     border: 1px solid #8e8e8e;
     padding: 0.5em 1em;
     background-color: #7EFFE2;
-    color: #9B9B9B; }
-
+    color: #9B9B9B;}
   h3 a, h3 a:hover {
-    color: black !important;
-    cursor: pointer; }
+      color: black !important;
+      cursor: pointer;}
+
 /*---------------------------------------------------*/
 /*---------------------------------------------------*/
 .sv-sidebar {
@@ -132,11 +132,11 @@ button {
   .sv-sidebar-nav ul li {
     margin-bottom: 16px; }
     .sv-sidebar-nav ul li a,
-     .sv-sidebar-nav ul li a:hover {
+    .sv-sidebar-nav ul li a:hover {
       display: block;
       color: #9B9B9B !important;
       font-size: 20px;
-      cursor: pointer; }
+      cursor: pointer;}
 
 /*---------------------------------------------------*/
 /*---------------------------------------------------*/
@@ -200,15 +200,12 @@ button {
 .sv-features,
 .sv-units {
   padding: 2em 2.5em;
-  background-color: #fff;
-  /*margin: 4em 0; */
-  }
+  background-color: #fff; }
 
 .units-graph {
   width: 100%;
   margin: 0 auto;
-  overflow-x: scroll;
-}
+  overflow-x: scroll;}
 
 .sv-feature-label a {
   display: block;
@@ -300,7 +297,6 @@ button {
     margin-top: 1.5em; }
 
 .sv-unit-questions {
-  /*margin-top: 2em;*/
   padding: 2em; }
 
 .sv-unit-question-block {
@@ -310,13 +306,12 @@ button {
   background-color: #FFFFFF; }
 
 .sv-unit-question-block h1 {
-     font-size: 1.1em !important;
- }
- 
- .sv-unit-question-block h3 {
-     font-size: 0.9em !important;
- }
- 
+    font-size: 1.1em !important;
+}
+
+.sv-unit-question-block h3 {
+    font-size: 0.9em !important;
+}
 
 .sv-unit-question-block::after {
   clear: both;
@@ -670,29 +665,28 @@ svg.long-text text {
 
 /*# sourceMappingURL=style.css.map */
 
-  .md-toolbar-tools, ._md-thumb {
+.md-toolbar-tools, ._md-thumb {
     background-color: #6BA9D9 !important;
-  }
- 
- .md-button {
-     background-color: #6BA9D9 !important;
-     color: white !important;
- }
+}
 
- .md-datepicker-button {
-     display: none !important;
- }
- 
- .md-switch {
-     margin: -5px 0 0 0 !important;
- }
- 
- .md-checked ._md-bar {
-     background-color: #6BA9D9 !important;
- }
- 
- 
- .dialog-header-icon {
-     width: 30px;
-     margin: 0 10px -5px 0;
- }
+.md-button {
+    background-color: #6BA9D9 !important;
+    color: white !important;
+}
+
+.md-datepicker-button {
+    display: none !important;
+}
+
+md-switch {
+    margin: -5px 0 0 0 !important;
+}
+
+.md-checked ._md-bar {
+    background-color: #6BA9D9 !important;
+}
+
+.dialog-header-icon {
+    width: 30px;
+    margin: 0 10px -5px 0;
+}
