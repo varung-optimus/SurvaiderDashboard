@@ -69,9 +69,44 @@
        $scope.cancel = function() {
          $mdDialog.cancel();
        };
-       $scope.answer = function(answer) {
-         $mdDialog.hide(answer);
+       $scope.saveSettings = function() {
+         console.log($scope.survey);
+         var data = {};
+         var config = {};
+
+         data = {
+             swag: $scope.survey.responseCap
+         };
+
+         $http
+            .post('/api/survey/' + application.SURVEY_ID + '/response_cap', data, config)
+            .then(successCallback, errorCallback);
+
+        data = {
+            swag: $scope.survey.expiryDate
+        };
+
+        $http
+           .post('/api/survey/' + application.SURVEY_ID + '/expires', data, config)
+           .then(successCallback, errorCallback);
+
+           data = {
+               swag: $scope.survey.expiryDate
+           };
+
+           $http
+              .post('/api/survey/' + application.SURVEY_ID + '/paused', data, config)
+              .then(successCallback, errorCallback);
+
        };
+
+       function successCallback(data) {
+           console.log('Saved' + data);
+       }
+
+       function errorCallback(data) {
+           alert('Some error occurred, please contact Admin');
+       }
      }
    };
 
