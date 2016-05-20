@@ -1498,7 +1498,12 @@
     $routeProvider
     .when('/survey/:unitid/analysis', {
       controller: 'UnitController',
-      templateUrl: './unit.html'
+      templateUrl: function(params){
+          if(params.parent) {
+              return './home.html';
+          }
+          return './unit.html';
+      }
     })
 
     // .when('/overallAnalytics', {

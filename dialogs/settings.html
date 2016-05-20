@@ -19,7 +19,7 @@
                   <label>Expire survey</label>
               </div>
               <div flex="30">
-                  <input type="date" />
+                  <input type="date" ng-model="survey.expiryDate"/>
               </div>
               <span flex="10"></span>
               <div flex="15">
@@ -36,7 +36,7 @@
                   <label>Response Cap</label>
               </div>
               <div flex="75">
-                  <input name="postalCode" ng-model="survey.responseCap" placeholder = "123"/>
+                  <input name="postalCode" ng-model="survey.responseCap" placeholder = "123" />
               </div>
           </div>
       </div>
