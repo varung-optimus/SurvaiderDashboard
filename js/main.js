@@ -61,6 +61,8 @@
 
      function DialogController($scope, $mdDialog, $location) {
        $scope.surveyUrl = $location.absUrl();
+       $scope.surveyName = application.companyName + ' - ' + application.unitName;
+
        $scope.hide = function() {
          $mdDialog.hide();
        };
