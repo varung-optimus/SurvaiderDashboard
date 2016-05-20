@@ -1517,7 +1517,8 @@
 
   }]);
 
-  appModule.controller('OverallAnalyticsController', [ '$scope', function($scope){
+  appModule.controller('OverallAnalyticsController', [ '$scope', , '$routeParams',
+  function($scope, $routeParams){
 
     $scope.surveyQuestions = application.surveyQuestions;
 
@@ -1532,12 +1533,12 @@
     // });
     $routeProvider
     .when('/survey/:unitid/analysis', {
-      controller: function(params){
-          if(params.parent) {
-              return 'HomeController';
-          }
-          return 'UnitController';
-      },
+    //   controller: function ($routeParams){
+    //       if ($routeParams.parent) {
+    //           return 'HomeController';
+    //       }
+    //       return 'UnitController';
+    //   },
     //   'UnitController',
       templateUrl: function(params){
           if(params.parent) {
