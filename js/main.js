@@ -91,7 +91,7 @@
            .then(successCallback, errorCallback);
 
            data = {
-               swag: $scope.survey.expiryDate
+               swag: $scope.survey.isPaused
            };
 
            $http
@@ -1532,7 +1532,13 @@
     // });
     $routeProvider
     .when('/survey/:unitid/analysis', {
-      controller: 'UnitController',
+      controller: function(params){
+          if(params.parent) {
+              return 'HomeController';
+          }
+          return 'UnitController';
+      },
+    //   'UnitController',
       templateUrl: function(params){
           if(params.parent) {
               return './home.html';
