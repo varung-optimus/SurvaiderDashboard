@@ -1,0 +1,176 @@
+[
+    {
+                    "avg_rating": {
+                        "a_1": 3.8,
+                        "a_2": 3.7,
+                        "a_3": 3.0,
+                        "a_4": 3.8,
+                        "a_5": 3.6
+                    },
+                    "cid": "73cc8a14-9cff-4a55-a9dc-d723ce382eb5",
+                    "label": "Rate your experience on the following parameters",
+                    "options_code": {
+                        "a_1": "Food",
+                        "a_2": "Value for Money",
+                        "a_3": "Delivery",
+                        "a_4": "Packing",
+                        "a_5": "Ordering"
+
+                    },
+                    "options_count": {
+                        "a_1": {
+                            "4": 1
+                        },
+                        "a_2": {
+                            "5": 1
+                        },
+                        "a_3": {
+                            "4": 1
+                        },
+                        "a_4": {
+                            "4": 1
+                        },
+                        "a_5": {
+                            "5": 1
+                        }
+                    },
+                    "total_resp": 1,
+                    "type": "group_rating"
+    },
+    {
+        "avg_rating": 8.0,
+        "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1",
+        "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?",
+        "options_code": {},
+        "options_count": {
+            "a_8": 1
+        },
+        "total_resp": 1,
+        "type": "rating"
+    },
+    {
+        "cid": "50709fb7-70e0-4711-9c18-72484636e385",
+        "label": "What is your name?",
+        "options_code": {},
+        "options_count": {
+            "Madhulika": 1
+        },
+        "total_resp": 1,
+        "type": "short_text"
+    },
+    {
+        "cid": "3287e8a2-1b6c-49ea-a951-de49ad886f75",
+        "keywords": {
+            "food": 1.0,
+            "hey": 1.0,
+            "hey loved": 1.0,
+            "hey loved food": 1.0,
+            "loved": 1.0,
+            "loved food": 1.0
+        },
+        "label": "Please write us a review!",
+        "options_code": {},
+        "options_count": {},
+        "sentiment": {
+            "negative": 1,
+            "neutral": 2,
+            "positive": 3
+        },
+        "sentiment_segg": {
+            "neat": "positive",
+            "proportions": "positive",
+            "spicy": "positive",
+            "slow": "negative",
+            "price": "neutral",
+            "value": "neutral"
+        },
+        "total_resp": 1,
+        "type": "long_text"
+    },
+    {
+        "cid": "23c008b1-e40b-453b-b020-e06a887c5e4f",
+        "label": "Did you like the food?",
+        "options_code": {
+            "a_1": "Yes",
+            "a_2": "No"
+        },
+        "options_count": {
+             "a_1": 3,
+            "a_2": 2
+        },
+        "total_resp": 5,
+        "type": "yes_no"
+    },
+    {
+        "cid": "b303250c-4a91-4525-8b8c-da9afe17aa98",
+        "label": "Choose only one",
+        "options_code": {
+            "a_1": "Butter chicken",
+            "a_2": "Paneer",
+            "a_3": "Dal makhni"
+        },
+        "options_count": {
+             "a_1": 3,
+            "a_2": 1,
+            "a_3": 2
+        },
+        "total_resp": 6,
+        "type": "single_choice"
+    },
+    {
+        "cid": "db74fe2f-bca5-4377-8316-2ae77136552a",
+        "label": "Choose as many as you like!",
+        "options_code": {
+            "a_1": "Delhi",
+            "a_2": "Bangalore",
+            "a_3": "Kolkata"
+        },
+        "options_count": {
+            "a_2###a_3": 1
+        },
+        "options_count_segg": {
+            "a_2": 1,
+            "a_3": 1
+        },
+        "total_resp": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "cid": "bd7027f9-a37f-4943-a701-5799bffc1322",
+        "label": "Rank the following",
+        "options_code": {
+            "a_1": "one",
+            "a_2": "two",
+            "a_3": "three"
+        },
+        "options_count": {
+            "a_1": 1,
+            "a_2": 2,
+            "a_3": 0
+        },
+        "ranking_count": {
+            "a_1": {
+                "2": 1
+            },
+            "a_2": {
+                "1": 1
+            },
+            "a_3": {
+                "3": 1
+            }
+        },
+        "total_resp": 1,
+        "type": "ranking"
+    },
+    {
+        "avg_rating": 8.0,
+        "cid": "4181b235-9900-4ffa-9058-81d23e4d9723",
+        "label": "Give us a rating for staff",
+        "options_code": {},
+        "options_count": {
+            "a_8": 1
+        },
+        "total_resp": 1,
+        "type": "rating"
+    }
+]

@@ -312,11 +312,11 @@ button {
 .sv-unit-question-block h1 {
      font-size: 1.1em !important;
  }
-
+ 
  .sv-unit-question-block h3 {
      font-size: 0.9em !important;
  }
-
+ 
 
 .sv-unit-question-block::after {
   clear: both;
@@ -673,7 +673,7 @@ svg.long-text text {
   .md-toolbar-tools, ._md-thumb {
     background-color: #6BA9D9 !important;
   }
-
+ 
  .md-button {
      background-color: #6BA9D9 !important;
      color: white !important;
@@ -682,15 +682,16 @@ svg.long-text text {
  .md-datepicker-button {
      display: none !important;
  }
-
+ 
  md-switch {
      margin: -5px 0 0 0 !important;
  }
-
+ 
  .md-checked ._md-bar {
      background-color: #6BA9D9 !important;
  }
-
+ 
+ 
  .dialog-header-icon {
      width: 30px;
      margin: 0 10px -5px 0;

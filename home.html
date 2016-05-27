@@ -96,16 +96,19 @@
 
     <nav>
       <ul>
-        <li ng-class="activeTab == overallTabLabel? 'tab-current': ''"
-            ng-click="switchTab(overallTabLabel)"><a>Overall</a></li>
-
-        <li ng-repeat="item in sentiments" ng-class="activeTab == '{{item.label}}'? 'tab-current': ''"
-            ng-click="switchTab(item)">
-            <a>{{item.label}}</a>
-        </li>
-
+        <!-- <li class="tab-current"><a href="#section-1">Overall</a></li> -->
+        <!--li><a href="#section-1">Facebook</a></li>
+        <li><a href="#section-1">Twitter</a></li-->
         <!-- <li><a href="#section-1">Tripadvisor</a></li>
         <li><a href="#section-1">Facebook</a></li> -->
+
+        <li ng-class="activeTab == overallTabLabel? 'tab-current': ''"
+          ng-click="switchTab(overallTabLabel)"><a>Overall</a>
+        </li>
+
+        <li ng-repeat="item in sentiments" ng-class="activeTab == '{{item.label}}'? 'tab-current': ''" ng-click="switchTab(item)">
+          <a>{{item.label}}</a>
+        </li>
       </ul>
     </nav>
 
@@ -144,7 +147,7 @@
         <div class="sv-units" ng-show="activeTab == overallTabLabel">
           <div class="units-graph" style="padding: 2em">
 
-            <svg ng-attr-width="{{unitsGraph.outerWidth}}" ng-attr-height="{{unitsGraph.outerWidth-100}}">
+            <svg ng-attr-width="{{unitsGraph.outerWidth}}" ng-attr-height="{{unitsGraph.outerWidth - 100}}">
             <g ng-repeat="counter in makeANumberArray(6)" transform="translate(0,75)">
               <line x1="30" ng-attr-y1="{{5 + 100*$index}}" ng-attr-x2="{{unitsGraph.outerWidth - 20}}" ng-attr-y2="{{5 + 100*$index}}" stroke="#DDDDDD" stroke-width="2" ></line>
               <text x="10" ng-attr-y="{{5 + 100*$index}}" text-anchor="middle">{{6-counter}}</text>
@@ -153,12 +156,14 @@
             <line x1="30" ng-attr-y1="{{unitsGraph.height - 20}}" ng-attr-x2="{{unitsGraph.outerWidth - 20}}" ng-attr-y2="{{unitsGraph.height - 20}}" stroke="#979797" stroke-width="2" ></line>
             <g ng-repeat="unit in units" ng-init="$rootIndex = $index">
               <g transform="translate({{$index*20}},75)">
+                <!-- <circle ng-repeat="feature in unit.features" ng-attr-cx="{{100 + 100*$rootIndex}}" ng-attr-cy="{{504 - 100*(feature.score)}}" r="10" ng-attr-fill="{{colors[$index%colors.length]}}"></circle> -->
                 <circle ng-repeat="feature in unit.features" ng-attr-cx="{{100 + 100*$rootIndex}}" ng-attr-cy="{{504 - 100*(feature.score)}}" r="10" ng-attr-fill="{{colors[$index%colors.length]}}">
-                    <title>{{features[$index].label}} - {{feature.score}}</title>
+                  <title>{{features[$index].label}} - {{feature.score}}</title>
                 </circle>
               </g>
-              <a xlink:href="{{'./#/survey/s:' + unit.id + '/analysis'}}">
-                  <!-- <a xlink:href="{{'#/unit/' + unit.id}}"> -->
+              <a xlink:href="{{'/survey/s:' + unit.id + '/analysis'}}">
+              <!-- <a xlink:href="{{'#/unit/' + unit.id}}"> -->
+              
               <!-- <a xlink:href="{{'http://localhost:5000/survey/s:' + unit.id + '/analysis'}}"> -->
                 <line ng-attr-x1="{{100 + 120*$rootIndex}}" ng-attr-x2="{{100 + 120*$rootIndex}}" ng-attr-y1="{{unitsGraph.height + 40 - 65}}" ng-attr-y2="{{unitsGraph.height + 40 - 55}}" stroke="#999" stroke-width="2"></line>
                 <circle ng-attr-cx="{{100 + 120*$rootIndex}}" ng-attr-cy="{{unitsGraph.height + 40}}" r="50" fill="#eee"></circle>
@@ -180,17 +185,17 @@
           </div>
 
         </div>
-
+         
             <!-- Unit:: Cards -->
         <div class="sv-unit-questions">
             <div ng-repeat="sentiment in sentiments">
                 <li class="sv-unit-question-block ng-scope"
-                    ng-show="activeTab == sentiment.label || activeTab == overallTabLabel">
+                  ng-show="activeTab == sentiment.label || activeTab == overallTabLabel">
                     <div style="width: 33.333%; float: left">
                     <div class="sentiment-group" >
                         <h1 ng-bind="sentiment.label" class="ng-binding"></h1>
                     </div>
-
+                    
                     <div class="sentiment-body">
                         <div ng-repeat="item in sentiment.series ">
                             <h3>{{item}} Rating: {{sentiment.data[$index][0]}}</h3>
@@ -207,7 +212,7 @@
                 </li>
             </div>
         </div>
-
+         
         <div class="sv-unit-questions" ng-show="activeTab == overallTabLabel">
 
           <ul>
@@ -654,7 +659,7 @@
           </ul>
 
         </div>
-
+         
       </div>
 
     </div>
