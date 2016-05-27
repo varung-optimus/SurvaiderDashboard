@@ -210,6 +210,10 @@ button {
   overflow-x: scroll;
 }
 
+.units-graph > svg {
+    cursor: pointer;
+}
+
 .sv-feature-label a {
   display: block;
   padding: 1em 1.5em;
