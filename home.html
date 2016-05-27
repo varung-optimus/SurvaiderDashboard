@@ -14,6 +14,7 @@
       <div class="rating-graph">
         <svg ng-attr-width="{{ratingGraph.graphWidth}}" ng-attr-height="{{ratingGraph.graphHeight}}">
           <g>
+            <line x1="0" y1="0" x2="0" ng-attr-y2="{{ratingGraph.graphHeight - 20}}" stroke="#aaaaaa" stroke-width="2" y2="{{ratingGraph.graphHeight - 5}}"></line>
             <line opacity="0.75" ng-attr-x1="{{0}}" ng-attr-x2="{{ratingGraph.graphWidth}}" ng-attr-y1={{0}} ng-attr-y2="{{0}}" stroke="#DED8D8" stroke-width="2"  />
             <line opacity="0.75" ng-attr-x1="{{0}}" ng-attr-x2="{{ratingGraph.graphWidth}}" ng-attr-y1={{(ratingGraph.graphHeight-25)/2}} ng-attr-y2="{{(ratingGraph.graphHeight-25)/2}}" stroke="#DED8D8" stroke-width="2"  />
             <line opacity="0.75" ng-attr-x1="{{0}}" ng-attr-x2="{{ratingGraph.graphWidth}}" ng-attr-y1={{(ratingGraph.graphHeight-25)}} ng-attr-y2="{{(ratingGraph.graphHeight-25)}}" stroke="#DED8D8" stroke-width="2"  />
@@ -163,7 +164,7 @@
               </g>
               <a xlink:href="{{'/survey/s:' + unit.id + '/analysis'}}">
               <!-- <a xlink:href="{{'#/unit/' + unit.id}}"> -->
-              
+
               <!-- <a xlink:href="{{'http://localhost:5000/survey/s:' + unit.id + '/analysis'}}"> -->
                 <line ng-attr-x1="{{100 + 120*$rootIndex}}" ng-attr-x2="{{100 + 120*$rootIndex}}" ng-attr-y1="{{unitsGraph.height + 40 - 65}}" ng-attr-y2="{{unitsGraph.height + 40 - 55}}" stroke="#999" stroke-width="2"></line>
                 <circle ng-attr-cx="{{100 + 120*$rootIndex}}" ng-attr-cy="{{unitsGraph.height + 40}}" r="50" fill="#eee"></circle>
@@ -185,7 +186,7 @@
           </div>
 
         </div>
-         
+
             <!-- Unit:: Cards -->
         <div class="sv-unit-questions">
             <div ng-repeat="sentiment in sentiments">
@@ -195,7 +196,7 @@
                     <div class="sentiment-group" >
                         <h1 ng-bind="sentiment.label" class="ng-binding"></h1>
                     </div>
-                    
+
                     <div class="sentiment-body">
                         <div ng-repeat="item in sentiment.series ">
                             <h3>{{item}} Rating: {{sentiment.data[$index][0]}}</h3>
@@ -212,7 +213,7 @@
                 </li>
             </div>
         </div>
-         
+
         <div class="sv-unit-questions" ng-show="activeTab == overallTabLabel">
 
           <ul>
@@ -659,7 +660,7 @@
           </ul>
 
         </div>
-         
+
       </div>
 
     </div>
