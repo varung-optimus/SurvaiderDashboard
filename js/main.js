@@ -167,6 +167,9 @@
       $scope.sentiments = application.sentiments;
       $scope.totalRespondents = application.totalRespondents;
       $scope.companyName = application.companyName;
+      // Create wordcloud
+      var wordcloudData = application.wordcloud;
+      drawWordCloud(wordcloudData);
       // $scope.unitName = application.unitName;
       // alert("Homecontroller, API1 call");
 

@@ -14,6 +14,7 @@
     this.companyName = [];
     this.unitName = [];
     this.unitId = '';
+    this.wordcloud = [];
   }
 
   //Initializer
@@ -33,6 +34,7 @@
     self.setTotalRespondents(data['parent_survey']['responses'][0]['total_resp']);
     self.setCompanyName(data['parent_survey']['meta']['company']);
     self.setUnitName(data['parent_survey']['meta']['unit_name']);
+    self.setWordCloud(data['parent_survey']['wordcloud']);
     self.setUnitId(data['parent_survey']['meta']['id']);
     // self.unitName = data['parent_survey']['meta'].unit_name;
     // alert(self.unitName);
@@ -238,6 +240,11 @@
   app.prototype.setUnitName = function(unit_Name){
     var self = this;
     self.unitName = unit_Name;
+  }
+
+  app.prototype.setWordCloud = function(wordcloud){
+    var self = this;
+    self.wordcloud = wordcloud;
   }
 
   app.prototype.setUnitId = function(unit_id){
