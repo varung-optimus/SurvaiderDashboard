@@ -273,7 +273,7 @@
             break;
           case 'multiple_choice':
             var multipleChoice = data[i];
-            setMultipleChoiceQuestion();
+            // setMultipleChoiceQuestion();
             break;
           case 'ranking':
             var rankingQuestion = data[i];
@@ -957,7 +957,7 @@
             break;
           case 'multiple_choice':
             var multipleChoice = data[i];
-            setMultipleChoiceQuestion();
+            // setMultipleChoiceQuestion();
             break;
           case 'ranking':
             var rankingQuestion = data[i];
