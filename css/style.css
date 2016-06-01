@@ -214,6 +214,8 @@ button {
   margin: 0 auto;
   overflow-x: scroll;
   padding: 0px !important;
+  z-index: 2;
+  position: relative;
 }
 
 .units-graph > svg {
