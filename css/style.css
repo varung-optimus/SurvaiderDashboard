@@ -204,10 +204,16 @@ button {
   /*margin: 4em 0; */
   }
 
+.sv-units {
+    overflow: hidden;
+    position: relative;
+}
+
 .units-graph {
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
   overflow-x: scroll;
+  padding: 0px !important;
 }
 
 .units-graph > svg {
@@ -700,3 +706,10 @@ svg.long-text text {
      width: 30px;
      margin: 0 10px -5px 0;
  }
+
+.units-graph__y-axis {
+    position: absolute;
+    /*margin-left: 67px;*/
+    /*background: white;*/
+    /*z-index: 1;*/
+}
