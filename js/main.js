@@ -169,7 +169,13 @@
       $scope.companyName = application.companyName;
       // Create wordcloud
       var wordcloudData = application.wordcloud;
-      drawWordCloud(wordcloudData);
+      // Set time out is needed as D3 chart library is calling before Angular is loaded
+      setTimeout(function() {
+        //   for (var wordcloud_index = 0; wordcloud_index < wordcloudData.length; wordcloud_index++) {
+        for (var sentiment in wordcloudData) {
+            drawWordCloud(wordcloudData[sentiment], sentiment);
+        }
+      }, 0, wordcloudData);
       // $scope.unitName = application.unitName;
       // alert("Homecontroller, API1 call");
 

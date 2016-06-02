@@ -1,12 +1,12 @@
 (function(window){
 
-  function drawWordCloud(frequency_list){
+  function drawWordCloud(wordcloudData, sentiment){
       var color = d3.scale.linear()
               .domain([0,1,2,3,4,5,6,10,15,20,100])
               .range(["#ddd", "#ccc", "#bbb", "#aaa", "#999", "#888", "#777", "#666", "#555", "#444", "#333", "#222"]);
 
       function draw(words) {
-          d3.select("#wordcloud").html('').append("svg")
+          d3.selectAll("." + sentiment +"_wordcloud").html('').append("svg")
                   .attr("width", 850)
                   .attr("height", 350)
                   .attr("class", "wordcloud")
@@ -26,9 +26,9 @@
       }
 
       d3.layout.cloud().size([800, 300])
-              .words(frequency_list)
+              .words(wordcloudData)
               .rotate(0)
-              .fontSize(function(d) { return d.size; })
+              .fontSize(function(d) { return d.size*3; })
               .on("end", draw)
               .start();
   }
