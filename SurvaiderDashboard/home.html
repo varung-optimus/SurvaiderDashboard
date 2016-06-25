@@ -127,20 +127,19 @@
 
 
         <div style="padding: 2em">
-            Filter: <input type="text"class="form-control" ng-model="hotel" placeholder="Search hotel name"></input>
 
         </div>
-        <div style="padding: 2em" ng-repeat="hotelRating in hotelsRatings | filter:hotel">
+        <div style="padding: 2em">
             <h3>
-                {{hotelRating.name}}
+                {{hotelsRatings.name}}
             </h3>
             <div>
-                <canvas id="unitChart{{hotelRating.id}}" class="chart chart-bar"
-                    chart-data="hotelRating.data"
-                    chart-labels="hotelRating.labels"
-                    chart-series="hotelRating.series"
-                    chart-options="hotelRating.graphOptions"
-                    chart-colours="hotelRating.colors">
+                <canvas id="unitChart{{hotelsRatings.id}}" class="chart chart-bar"
+                    chart-data="hotelsRatings.data"
+                    chart-labels="hotelsRatings.labels"
+                    chart-series="hotelsRatings.series"
+                    chart-options="hotelsRatings.graphOptions"
+                    chart-colours="hotelsRatings.colors">
               </canvas>
             </div>
 
