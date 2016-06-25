@@ -8,7 +8,7 @@
 
     // Defaults for graph options
     this.graphOptions = {
-        barShowStroke : false,
+        barShowStroke : true,
         showScale: true,
         barDatasetSpacing : 10
     },
