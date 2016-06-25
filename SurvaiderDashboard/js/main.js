@@ -183,6 +183,9 @@
       application.init(data);
       $scope.features = application.features;
       $scope.hotelsRatings = application.hotelsRatings;
+      $scope.filterData = function() {
+        $scope.hotelsRatings.data = [[1],[2],[3],[2],[2]];
+      };
       $scope.units = application.units;
       $scope.ratingPoints = application.ratingPoints;
       $scope.dates = application.dates;
