@@ -243,7 +243,6 @@
         iter++;
     }
     self.hotelsRatings = new hotelRating('hotelsRatings', 'hotelsRatings', chartData, chartLabels, chartSeries);
-    console.log(self.hotelsRatings);
   }
 
   app.prototype.setFeaturesScore = function(featuresData){

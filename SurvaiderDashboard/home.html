@@ -127,7 +127,15 @@
 
 
         <div style="padding: 2em">
-            <a ng-click="filterData()"> Click here to filter</a>
+            <select ng-model="filterAspect" ng-change="filterData()">
+                <option value="">Aspect</option>
+                <option ng-repeat="series in hotelsRatings.series" value="{{series}}">{{series}}</option>
+            </select>
+            <select ng-model="filterMode" ng-change="filterData()">
+                <option value="">Order</option>
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
         </div>
         <div style="padding: 2em">
             <h3>

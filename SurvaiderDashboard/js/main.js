@@ -171,6 +171,10 @@
       return new Date(date);
     }
 
+    var _filterData = function(data, aspect, mode) {
+        return [[1],[2],[3],[2],[2]];
+    };
+
     //HTTP-MARK::- Dashboard API Call which returns top-most line graph data
     //and unit-graph data
 
@@ -184,7 +188,11 @@
       $scope.features = application.features;
       $scope.hotelsRatings = application.hotelsRatings;
       $scope.filterData = function() {
-        $scope.hotelsRatings.data = [[1],[2],[3],[2],[2]];
+          if ($scope.filterMode && $scope.filterAspect) {
+            //   $scope.hotelsRatings.data = [[1],[2],[3],[2],[2]];
+            // Apply filter to update data
+            $scope.hotelsRatings.data = _filterData($scope.hotelsRatings.data, $scope.filterAspect, $scope.filterMode);
+          }
       };
       $scope.units = application.units;
       $scope.ratingPoints = application.ratingPoints;
