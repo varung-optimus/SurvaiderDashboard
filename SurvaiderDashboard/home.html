@@ -129,7 +129,7 @@
         <div style="padding: 2em">
             <select ng-model="filterAspect" ng-change="filterData()">
                 <option value="">Aspect</option>
-                <option ng-repeat="series in hotelsRatings.series" value="{{series}}">{{series}}</option>
+                <option ng-repeat="series in hotelsRatings.series track by $index" value="{{$index}}">{{series}}</option>
             </select>
             <select ng-model="filterMode" ng-change="filterData()">
                 <option value="">Order</option>
