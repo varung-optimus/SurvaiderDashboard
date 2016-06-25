@@ -216,31 +216,63 @@
   app.prototype.setHotelsRatings = function(parentSurveyData){
     var self = this;
     var units = parentSurveyData['units'];
+    var chartLabels = [];
+    var chartSeries = [];
+    var chartData = [];
 
+    var iter = 0;
     for (var unit in units) {
-        var id = units[unit]['meta']['id'];
-        var name = units[unit]['meta']['unit_name'];
-        var unitResponseData = units[unit]['responses'][1];
-            for (var prop in unitResponseData) {
-                if( unitResponseData.hasOwnProperty( prop ) ) {
-                  if (prop === 'avg_rating') {
-                      // convert each array value to array and map to hotel rating data
-                      var data = [];
-                      var avg_rating_index = 0;
-                      for (var avgRatingItem in unitResponseData[prop]) {
-                          var tempArr = [];
-                          tempArr.push(unitResponseData[prop][avgRatingItem])
-                          data.push(tempArr);
-                          avg_rating_index++;
-                      }
-                      self.hotelsRatings.push(
-                          new hotelRating(id, name, data)
-                      );
-                  }
+        chartLabels.push(units[unit]['meta']['unit_name']);
+        var optionsCode = units[unit]['responses'][1]['options_code'];
+        var avgRating = units[unit]['responses'][1]['avg_rating'];
+        // Need to prepare this only for 1st unit
+        if (iter === 0) {
+            for (var unitFeature in optionsCode) {
+                chartSeries.push(optionsCode[unitFeature]);
             }
         }
 
+        var featureRatingIter = 0;
+        for (var featureRating in avgRating) {
+            if (!chartData[featureRatingIter]) {
+                chartData[featureRatingIter] = [];
+            }
+            chartData[featureRatingIter].push(avgRating[featureRating]);
+            featureRatingIter++;
+        }
+        // chartData.push(hotelFeatureRating);
+        iter++;
     }
+    self.hotelsRatings.push(
+        new hotelRating('hotelsRatings', 'hotelsRatings', chartData, chartLabels, chartSeries)
+    );
+    console.log(self.hotelsRatings);
+
+    // for (var unit in units) {
+    //     var id = units[unit]['meta']['id'];
+    //     var name = units[unit]['meta']['unit_name'];
+    //
+    //     var unitResponseData = units[unit]['responses'][1];
+    //         for (var prop in unitResponseData) {
+    //             if( unitResponseData.hasOwnProperty( prop ) ) {
+    //               if (prop === 'avg_rating') {
+    //                   // convert each array value to array and map to hotel rating data
+    //                   var data = [];
+    //                   var avg_rating_index = 0;
+    //                   for (var avgRatingItem in unitResponseData[prop]) {
+    //                       var tempArr = [];
+    //                       tempArr.push(unitResponseData[prop][avgRatingItem])
+    //                       data.push(tempArr);
+    //                       avg_rating_index++;
+    //                   }
+    //                   self.hotelsRatings.push(
+    //                       new hotelRating(id, name, data, chartLabels, chartSeries)
+    //                   );
+    //               }
+    //         }
+    //     }
+    //
+    // }
   }
 
   app.prototype.setFeaturesScore = function(featuresData){
