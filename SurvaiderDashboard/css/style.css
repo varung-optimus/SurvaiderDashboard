@@ -761,3 +761,18 @@ svg.long-text text {
      width: 30px;
      margin: 0 10px -5px 0;
  }
+
+.insights-container {
+    padding: 5px;
+    background: rgba(250,250,250,0.87);
+    border-radius: 0.5em;
+}
+
+.insights-container p {
+    padding: 5px;
+    border-bottom: 1px solid grey;
+}
+
+.insights-container blockquote {
+    background: white;
+}

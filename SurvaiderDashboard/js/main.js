@@ -239,6 +239,8 @@
       };
 
       $scope.leaderboard = application.leaderboard;
+      $scope.insights = application.insights;
+      console.log($scope.insights);
       $scope.units = application.units;
       $scope.ratingPoints = application.ratingPoints;
       $scope.dates = application.dates;
@@ -246,7 +248,6 @@
       $scope.totalRespondents = application.totalRespondents;
       $scope.unifiedRating = application.unifiedRating;
       $scope.companyName = application.companyName;
-      $scope.insights = application.insights;
       // console.log($scope.features);
       var numberOfFeatures = $scope.features.length;
 

@@ -24,6 +24,14 @@
         ],
         "insights": [
             [
+                "This week",
+                [
+                    "Some text sentence here.",
+                    "Long sentence - Aspect 'Cleanliness' is leading to a 2.0 decrease in overall score.",
+                    "Some other text sentence here....."
+                ]
+            ],
+            [
                 "20-06-2016",
                 [
                     "Villagio Goa is on an all time low on aspect 'Room Service'.",

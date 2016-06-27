@@ -37,6 +37,7 @@
     self.setFeaturesColor();
     self.setHotelsRatings(data);
     self.setLeaderboard(data['parent_survey']['leaderboard']);
+    self.setInsights(data['parent_survey']['insights']);
     self.setRatingData(data['parent_survey']['responses'][0]['timed_agg']);
     self.setSentimentsObjectData(data['parent_survey']['sentiment']);
     self.setTotalRespondents(data['parent_survey']['meta']['total_resp']);
@@ -258,6 +259,20 @@
     }
   }
 
+  app.prototype.setInsights = function(insightsData){
+    var self = this;
+
+    for (var index = 0; index < insightsData.length; index++) {
+        var news = [];
+        self.insights.push(
+            new insight(
+                insightsData[index][0],
+                insightsData[index][1]
+            )
+        );
+    }
+  }
+
   app.prototype.setFeaturesScore = function(featuresData){
     var self = this;
     var index = 0;
@@ -353,26 +368,26 @@
     self.unifiedRating = uni_score;
   }
 
-  app.prototype.setInsights = function(insights){
-    var self = this;
-    pretty_insights = [];
-    num_of_weeks = insights.length;
-    for (var i = 0; i < num_of_weeks; i++){
-      insights_week = {};
-      if (i == 0){
-        insights_week["date"] = "This week";
-        insights_week["data"] = insights[i][1];
-      }
-      else{
-        insights_week["date"] = insights[i][0];
-        insights_week["data"] = insights[i][1];
-      }
-      pretty_insights.push(insights_week);
-    }
-
-    self.insights = pretty_insights;
-
-  }
+  // app.prototype.setInsights = function(insights){
+  //   var self = this;
+  //   pretty_insights = [];
+  //   num_of_weeks = insights.length;
+  //   for (var i = 0; i < num_of_weeks; i++){
+  //     insights_week = {};
+  //     if (i == 0){
+  //       insights_week["date"] = "This week";
+  //       insights_week["data"] = insights[i][1];
+  //     }
+  //     else{
+  //       insights_week["date"] = insights[i][0];
+  //       insights_week["data"] = insights[i][1];
+  //     }
+  //     pretty_insights.push(insights_week);
+  //   }
+  //
+  //   self.insights = pretty_insights;
+  //
+  // }
 
   //Testing Functions
   app.RandomizeTheData = function(array, keyName){
