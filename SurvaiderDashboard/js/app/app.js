@@ -4,6 +4,7 @@
   function app(){
     this.features = [];
     this.hotelsRatings = {};
+    this.leaderboard = [];
     this.units = [];
     this.ratingPoints = [];
     this.surveyQuestions = [];
@@ -35,6 +36,7 @@
     self.setFeaturesScore(data['parent_survey']['responses'][1]['avg_rating']);
     self.setFeaturesColor();
     self.setHotelsRatings(data);
+    self.setLeaderboard(data['parent_survey']['leaderboard']);
     self.setRatingData(data['parent_survey']['responses'][0]['timed_agg']);
     self.setSentimentsObjectData(data['parent_survey']['sentiment']);
     self.setTotalRespondents(data['parent_survey']['meta']['total_resp']);
@@ -243,6 +245,17 @@
         iter++;
     }
     self.hotelsRatings = new hotelRating('hotelsRatings', 'hotelsRatings', chartData, chartLabels, chartSeries);
+  }
+
+  app.prototype.setLeaderboard = function(leaderboardData){
+    var self = this;
+
+    for (var item in leaderboardData) {
+        self.leaderboard.push(new leaderboardEntry(
+            leaderboardData[item].name,
+            leaderboardData[item].score
+        ));
+    }
   }
 
   app.prototype.setFeaturesScore = function(featuresData){

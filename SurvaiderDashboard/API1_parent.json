@@ -1,5 +1,27 @@
 {
     "parent_survey": {
+        "leaderboard": [
+            {
+                "name": "Treebo Hotels",
+                "score": 89.4
+            },
+            {
+                "name": "QikStay Hotels",
+                "score": 88.6
+            },
+            {
+                "name": "Sterling Resorts",
+                "score": 82.6
+            },
+            {
+                "name": "OYO Rooms",
+                "score": 79.2
+            },
+            {
+                "name": "Fab Hotels",
+                "score": 78.8
+            }
+        ],
         "insights": [
             [
                 "20-06-2016",
