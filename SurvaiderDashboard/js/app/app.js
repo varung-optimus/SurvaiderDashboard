@@ -225,7 +225,7 @@
 
     var iter = 0;
     for (var unit in units) {
-        chartLabels.push(units[unit]['meta']['unit_name']);
+        chartLabels.push(units[unit]['meta']['unit_name'] + ' - ' + units[unit]['responses'][0]['avg_rating']);
         var optionsCode = units[unit]['responses'][1]['options_code'];
         var avgRating = units[unit]['responses'][1]['avg_rating'];
         // Need to prepare this only for 1st unit
