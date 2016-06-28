@@ -129,7 +129,7 @@
 
   }]);
 
-  appModule.controller('HomeController', [ '$scope', '$http', '$location',function($scope, $http, $location){
+  appModule.controller('HomeController', [ '$scope', '$http', '$location', '$timeout',function($scope, $http, $location, $timeout){
     // This is used for Overall tab
     $scope.overallTabLabel = 'all';
 
@@ -237,7 +237,11 @@
             $scope.hotelsRatings = _filterData(application.hotelsRatings, $scope.filterAspect, $scope.filterMode);
           }
       };
-
+      $scope.chartResizeProp = $scope.hotelsRatings.labels.length;
+      // Once page is loaded,we need to remove the style
+      $timeout(function() {
+          angular.element(document.querySelector('.bar-chart--hotels')).removeAttr('style');
+      }, 1000);
       $scope.leaderboard = application.leaderboard;
       $scope.insights = application.insights;
       console.log($scope.insights);

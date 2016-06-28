@@ -262,14 +262,16 @@
   app.prototype.setInsights = function(insightsData){
     var self = this;
 
-    for (var index = 0; index < insightsData.length; index++) {
-        var news = [];
-        self.insights.push(
-            new insight(
-                insightsData[index][0],
-                insightsData[index][1]
-            )
-        );
+    if (insightsData) {
+        for (var index = 0; index < insightsData.length; index++) {
+            var news = [];
+            self.insights.push(
+                new insight(
+                    insightsData[index][0],
+                    insightsData[index][1]
+                )
+            );
+        }
     }
   }
 
