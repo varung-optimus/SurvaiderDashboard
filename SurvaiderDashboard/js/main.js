@@ -235,6 +235,12 @@
           if ($scope.filterMode && $scope.filterAspect) {
             // Apply filter to update data
             $scope.hotelsRatings = _filterData(application.hotelsRatings, $scope.filterAspect, $scope.filterMode);
+            // Need to reapply the dynamic styling to handle large data
+            angular.element(document.querySelector('.bar-chart--hotels')).attr('style', 'width:' + $scope.chartResizeProp * 150 +'px;')
+
+            $timeout(function() {
+                angular.element(document.querySelector('.bar-chart--hotels')).removeAttr('style');
+            }, 1000);
           }
       };
       $scope.chartResizeProp = $scope.hotelsRatings.labels.length;
