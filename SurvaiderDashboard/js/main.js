@@ -219,6 +219,17 @@
         return hotelsRatings;
     };
 
+    var _adjustBarChartDynamicWidth = function() {
+        if ($scope.hotelsRatings.labels.length > 3) {
+            angular.element(document.querySelector('.bar-chart--hotels')).attr('style', 'width:' +
+                $scope.hotelsRatings.labels.length * 150 + 'px;');
+            // Once page is loaded,we need to remove the style
+            $timeout(function() {
+                angular.element(document.querySelector('.bar-chart--hotels')).removeAttr('style');
+            }, 1000);
+        }
+    };
+
     //HTTP-MARK::- Dashboard API Call which returns top-most line graph data
     //and unit-graph data
 
@@ -236,18 +247,10 @@
             // Apply filter to update data
             $scope.hotelsRatings = _filterData(application.hotelsRatings, $scope.filterAspect, $scope.filterMode);
             // Need to reapply the dynamic styling to handle large data
-            angular.element(document.querySelector('.bar-chart--hotels')).attr('style', 'width:' + $scope.chartResizeProp * 150 +'px;')
-
-            $timeout(function() {
-                angular.element(document.querySelector('.bar-chart--hotels')).removeAttr('style');
-            }, 1000);
+            _adjustBarChartDynamicWidth();
           }
       };
-      $scope.chartResizeProp = $scope.hotelsRatings.labels.length;
-      // Once page is loaded,we need to remove the style
-      $timeout(function() {
-          angular.element(document.querySelector('.bar-chart--hotels')).removeAttr('style');
-      }, 1000);
+      _adjustBarChartDynamicWidth();
       $scope.leaderboard = application.leaderboard;
       $scope.insights = application.insights;
       console.log($scope.insights);

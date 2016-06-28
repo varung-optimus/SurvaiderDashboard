@@ -1,1 +1,201 @@
-{"units": [{"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 87.32, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 4.7, "a_3": 4.7, "a_1": 4.32, "a_4": 3.41, "a_2": 4.7}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 21, "unit_name": "The High Walls, Mussoorie", "id": "VJY6QNlNm3zeJl6D2zB", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 64.92, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 3.17, "a_3": 3.17, "a_1": 3.37, "a_4": 3.35, "a_2": 3.17}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 19, "unit_name": "Avion International, Mumbai", "id": "xLOrQVxVNKDeLxr8WD7", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 85.76, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 4.58, "a_3": 4.58, "a_1": 3.27, "a_4": 4.58, "a_2": 4.43}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 13, "unit_name": "Village Line in Resort, Chail", "id": "QK8AYZLZzNOjKLAJ2G8", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 60.0, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 3.0, "a_3": 3.0, "a_1": 3.0, "a_4": 3.0, "a_2": 3.0}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 3, "unit_name": "Vestin Park, Chennai", "id": "OLZO4xrxJbNyLrO82G1", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 63.4, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 3.25, "a_3": 3.25, "a_1": 3.35, "a_4": 2.75, "a_2": 3.25}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 5, "unit_name": "Victeracce International, Kolkata", "id": "4zWaQZNQMg8BdBJ77vy", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 85.0, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 4.25, "a_3": 4.25, "a_1": 4.25, "a_4": 4.25, "a_2": 4.25}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 5, "unit_name": "Pong View, Dharamshala", "id": "QK8AYZLYexBnQnzNNl8", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 83.32, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 4.34, "a_3": 4.34, "a_1": 3.47, "a_4": 4.34, "a_2": 4.34}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 33, "unit_name": "M hotel, Mcleodganj", "id": "LKln869NBkOKqxKrVnv", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 72.84, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 3.67, "a_3": 3.67, "a_1": 3.56, "a_4": 3.64, "a_2": 3.67}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 13, "unit_name": "Rudra Plaza, Dwarka", "id": "jgQel1oNJpwn6WajMqr", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 72.2, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 3.5, "a_3": 3.55, "a_1": 3.5, "a_4": 3.5, "a_2": 4.0}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 9, "unit_name": "Leisure Inn, Munnar", "id": "jgQel1oogmlWK3NLQkr", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {"9": 1, "8": 1}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 82.4, "timed": {"2016-06-11 06:09:08": {"raw": "a_9", "pretty": "9"}, "2016-06-11 06:08:28": {"raw": "a_8", "pretty": "8"}}, "timed_agg": {"2016-06-11": 8.5}}, {"avg_rating": {"a_5": 4.12, "a_3": 4.12, "a_1": 4.07, "a_4": 4.17, "a_2": 4.12}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 9, "unit_name": "Sara Villas, Mandawa", "id": "MAlWm699AMm8rLbOl1g", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 55.2, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 3.0, "a_3": 3.0, "a_1": 2.7, "a_4": 2.1, "a_2": 3.0}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 6, "unit_name": "Amaris, Rishikesh", "id": "64x2DZ8jn7gD7wvmrYJ", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 79.4, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 4.0, "a_3": 4.0, "a_1": 3.89, "a_4": 4.0, "a_2": 3.96}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 11, "unit_name": "Imperial, Ujjain", "id": "YzX856aGVNwgMmm4LmL", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 90.56, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 4.6, "a_3": 4.6, "a_1": 4.24, "a_4": 4.6, "a_2": 4.6}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 6, "unit_name": "The Clover, Gurgaon", "id": "pdoXyVnmepxMKOOA2Vl", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 70.84, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 3.5, "a_3": 3.5, "a_1": 3.71, "a_4": 3.5, "a_2": 3.5}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 7, "unit_name": "Atithi, Ahmedabad", "id": "AmNQrZX5AeqnOjjvGZ5", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 41.52, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 2.0, "a_3": 2.0, "a_1": 1.78, "a_4": 2.6, "a_2": 2.0}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 5, "unit_name": "BKR Grand, Ooty", "id": "NLlry6KGVWYkNddvb66", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 72.96, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 3.73, "a_3": 3.73, "a_1": 3.73, "a_4": 3.73, "a_2": 3.32}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 16, "unit_name": "Khandwa Haveli, Jaipur", "id": "zdbLDV6kXvpkbJ7A5va", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 72.96, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 3.95, "a_3": 3.95, "a_1": 3.08, "a_4": 3.31, "a_2": 3.95}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 45, "unit_name": "Ashoka, Mount Abu", "id": "8NxZbvKAnXdAxw9YoXd", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {"7": 2}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 73.04, "timed": {"2016-06-11 06:07:30": {"raw": "a_7", "pretty": "7"}, "2016-06-11 06:06:49": {"raw": "a_7", "pretty": "7"}}, "timed_agg": {"2016-06-11": 7.0}}, {"avg_rating": {"a_5": 3.71, "a_3": 3.74, "a_1": 3.39, "a_4": 3.71, "a_2": 3.71}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 15, "unit_name": "Meridian Plaza, Delhi", "id": "bymAXZQAk7vwQVxeObn", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {"7": 2}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 59.36, "timed": {"2016-06-11 06:10:17": {"raw": "a_7", "pretty": "7"}, "2016-06-11 06:10:47": {"raw": "a_7", "pretty": "7"}}, "timed_agg": {"2016-06-11": 7.0}}, {"avg_rating": {"a_5": 3.07, "a_3": 3.07, "a_1": 2.81, "a_4": 2.82, "a_2": 3.07}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 28, "unit_name": "HHI, Varanasi", "id": "or8eKeokGLDl2Y8bVaq", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {"7": 1, "8": 2}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 65.08, "timed": {"2016-06-11 06:08:09": {"raw": "a_7", "pretty": "7"}, "2016-06-11 06:09:25": {"raw": "a_8", "pretty": "8"}, "2016-06-17 06:03:16": {"raw": "a_8", "pretty": "8"}}, "timed_agg": {"2016-06-11": 7.5, "2016-06-17": 8.0}}, {"avg_rating": {"a_5": 3.25, "a_3": 3.1, "a_1": 3.46, "a_4": 3.21, "a_2": 3.25}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 29, "unit_name": "Bridge View Regency, Shimla", "id": "7jlAdrpVNNY22lWpA5M", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {"8": 1}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 91.12, "timed": {"2016-06-11 06:10:17": {"raw": "a_8", "pretty": "8"}}, "timed_agg": {"2016-06-11": 8.0}}, {"avg_rating": {"a_5": 4.67, "a_3": 4.67, "a_1": 4.26, "a_4": 4.51, "a_2": 4.67}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 10, "unit_name": "Milestone 351, Jaipur", "id": "3Nm15vQKQG73YVgklwp", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 86.0, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 4.73, "a_3": 4.73, "a_1": 3.47, "a_4": 3.85, "a_2": 4.72}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 56, "unit_name": "Avalon Taj, Agra", "id": "l5x4MDeyOJ3Kd9pw54V", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 59.32, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 3.17, "a_3": 3.02, "a_1": 2.95, "a_4": 2.69, "a_2": 3.0}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 20, "unit_name": "The President, Bengaluru", "id": "ZzeQLwVAAJ9qDkWq9g5", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 75.36, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 3.94, "a_3": 3.94, "a_1": 3.29, "a_4": 3.73, "a_2": 3.94}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 70, "unit_name": "Turquoise, Chandigarh", "id": "Dg4ebgKZ1Ya3xanAlBW", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 57.88, "timed": {}, "timed_agg": {}}, {"avg_rating": {"a_5": 2.67, "a_3": 2.67, "a_1": 2.59, "a_4": 3.87, "a_2": 2.67}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 7, "unit_name": "Park Inn, Kolkata", "id": "naYo7YLnxWGvBYwgwmy", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}, {"responses": [{"options_count": {"7": 1, "8": 2}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 72.68, "timed": {"2016-06-11 06:06:59": {"raw": "a_8", "pretty": "8"}, "2016-06-11 06:06:11": {"raw": "a_7", "pretty": "7"}, "2016-06-17 06:02:32": {"raw": "a_8", "pretty": "8"}}, "timed_agg": {"2016-06-11": 7.5, "2016-06-17": 8.0}}, {"avg_rating": {"a_5": 3.68, "a_3": 3.74, "a_1": 3.48, "a_4": 3.72, "a_2": 3.55}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 64, "unit_name": "Marinha Dourada, Goa", "id": "yZa345QbQakMpL4ne7n", "created_by": "575833090b0f473cea67508e"}, "sentiment": {}}], "parent_survey": {"responses": [{"options_count": {"7": 6, "9": 1, "8": 7}, "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?", "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1", "avg_rating": 69.65, "timed": {"2016-06-11 06:06:11": {"raw": "a_7", "pretty": "7"}, "2016-06-17 06:02:32": {"raw": "a_8", "pretty": "8"}, "2016-06-11 06:10:47": {"raw": "a_7", "pretty": "7"}, "2016-06-11 06:09:08": {"raw": "a_9", "pretty": "9"}, "2016-06-11 06:08:09": {"raw": "a_7", "pretty": "7"}, "2016-06-11 06:10:17": {"raw": "a_8", "pretty": "8"}, "2016-06-17 06:02:00": {"raw": "a_8", "pretty": "8"}, "2016-06-11 06:09:25": {"raw": "a_8", "pretty": "8"}, "2016-06-11 06:07:30": {"raw": "a_7", "pretty": "7"}, "2016-06-11 06:06:59": {"raw": "a_8", "pretty": "8"}, "2016-06-11 06:06:49": {"raw": "a_7", "pretty": "7"}, "2016-06-11 06:08:28": {"raw": "a_8", "pretty": "8"}, "2016-06-17 06:03:16": {"raw": "a_8", "pretty": "8"}}, "timed_agg": {"2016-06-11": 7.6, "2016-06-17": 8.0}}, {"avg_rating": {"a_5": 3.56, "a_3": 3.56, "a_1": 3.3, "a_4": 3.44, "a_2": 3.55}, "options_code": {"a_5": "Amenities", "a_3": "Cleanliness", "a_1": "Ambience", "a_4": "Room Service", "a_2": "Value For Money"}}], "meta": {"company": "Qik Stay", "total_resp": 525, "unit_name": "Parent Survey", "id": "LKln86YMApjeYvpbOgG", "created_by": "Not Applicable"}, "sentiment": {"tripadvisor": {"Neutral": 97, "sentiment_segg": {"gurgaon": 0.34375, "complimentary": 0.5, "night": 0.11467889908256881, "imperial": 0.136986301369863, "call": 0.2, "mandawa": 0.5, "10": 0.21428571428571427, "huge": 0.5, "fresh": 0.3333333333333333, "251": 0.14622641509433962, "nice": 0.16451612903225807, "located": 0.14220183486238533, "good": 0.628099173553719, "conference": 0.5, "distance": 0.19047619047619047, "laundry": 0.20833333333333334, "milestone 251": 0.13679245283018868, "balcony": 0.2033898305084746, "cottages": 0.5, "check": 0.10954616588419405, "hotels": 0.16981132075471697, "dharamshala": 0.5, "agra": 0.3855421686746988, "haveli": 0.42857142857142855, "pretty": 0.5, "holiday": 0.2, "dwarka": 0.23809523809523808, "place": 0.13619402985074627, "day": 0.2231404958677686, "amenities": 0.12612612612612611, "family friendly place": 0.14285714285714285, "chail": 0.4666666666666667, "hygiene": 0.1111111111111111, "good hotel": 0.12790697674418605, "food": 0.2396694214876033, "chandigarh": 0.10810810810810811, "early": 0.3, "pong": 0.1986754966887417, "bridge view": 0.12406015037593984, "beach": 0.2644628099173554, "door": 0.1509433962264151, "amaris": 0.2222222222222222, "decent": 0.4, "airport": 0.5, "cottage": 0.32, "delhi": 0.4375, "experience": 0.13513513513513514, "hospital": 0.2727272727272727, "atmosphere": 0.14285714285714285, "high": 0.21739130434782608, "mount": 0.16778523489932887, "car": 0.3333333333333333, "quality": 0.25, "prompt": 0.5, "railway": 0.25, "budget": 0.1875, "hotel": 1.0, "front": 0.2222222222222222, "location": 0.3125, "family": 0.13870967741935483, "baga": 0.26066718386346005, "chennai": 0.20348837209302326, "choose": 0.16666666666666666, "moti": 0.10338345864661654, "restaurant": 0.16883116883116883, "buffet": 0.11627906976744186, "ashoka": 0.12790697674418605, "ahmedabad": 0.45454545454545453, "bangalore": 0.16428571428571428, "main": 0.23931623931623933, "business": 0.19642857142857142, "excellent": 0.14414414414414414, "quality hand": 0.25, "breakfast": 0.4214876033057851, "drop": 0.13333333333333333, "market": 0.13953488372093023, "booked": 0.14457831325301204, "area": 0.4, "kolkata": 0.2018348623853211, "bed": 0.25, "avalon taj": 0.16129032258064516, "clover": 1.0, "railway station": 0.25, "munnar": 0.30687830687830686, "hospitality": 0.21739130434782608, "awsome": 0.21428571428571427, "avalon": 0.26506024096385544, "jaipur": 0.3125, "poorly trained staff makes": 0.25, "great": 0.2644628099173554, "basics good": 0.2, "enjoyed": 0.3076923076923077, "bus": 0.1875, "front office": 0.16666666666666666, "ooty": 0.4225352112676056, "mall": 0.27450980392156865, "pool": 0.10634328358208955, "big": 0.18072289156626506, "goa": 0.28316524437548485, "ooty gate": 0.1267605633802817, "home": 0.38461538461538464, "cold": 0.3, "helpful": 0.25, "dinner": 0.5, "free wifi": 0.14285714285714285, "hot water": 0.16666666666666666, "lane": 0.1875, "mall road": 0.19607843137254902, "friendly": 0.25, "milestone": 0.18867924528301888, "days": 0.5, "money": 0.2, "card": 0.20833333333333334, "guests": 0.28125, "bathroom": 0.3125, "called": 0.12987012987012986, "hot": 0.19047619047619047, "ac": 0.16666666666666666, "reception": 0.14285714285714285, "mcleodganj": 0.1456953642384106, "le": 0.14285714285714285, "lift": 0.19607843137254902, "beautiful": 0.6666666666666666, "beded": 0.1111111111111111, "average": 0.3125, "hhi": 0.13246268656716417, "abu": 0.23255813953488372, "large": 0.6, "domestic": 0.13333333333333333, "floor": 0.23809523809523808, "food good": 0.16666666666666666, "quality hand full": 0.25, "clean": 0.23140495867768596, "neat": 0.1232876712328767, "lake": 0.3140495867768595, "gate": 0.13380281690140844, "lovely": 0.24793388429752067, "dharamshala mcleodganj": 0.4, "domestic airport": 0.22695035460992907, "park": 0.3125, "cleaning": 0.1875, "city": 0.11194029850746269, "comfortable": 0.13548387096774195, "credit": 0.20833333333333334, "april": 0.2, "nature": 0.4666666666666667, "pathetic": 0.16666666666666666, "highlight": 0.23076923076923078, "found": 0.16666666666666666, "iron": 0.2727272727272727, "back": 0.38461538461538464, "deluxe": 0.19607843137254902, "bridge": 0.12969924812030076}, "Negative": 74, "Positive": 354}, "zomato": {"Neutral": 0, "sentiment_segg": {}, "Negative": 0, "Positive": 0}}}}
+{
+    "parent_survey": {
+        "leaderboard": [
+            {
+                "name": "Treebo Hotels",
+                "score": 89.4
+            },
+            {
+                "name": "QikStay Hotels",
+                "score": 88.6
+            },
+            {
+                "name": "Sterling Resorts",
+                "score": 82.6
+            },
+            {
+                "name": "OYO Rooms",
+                "score": 79.2
+            },
+            {
+                "name": "Fab Hotels",
+                "score": 78.8
+            }
+        ],
+        "insights": [
+            [
+                "This week",
+                [
+                    "Some text sentence here.",
+                    "Long sentence - Aspect 'Cleanliness' is leading to a 2.0 decrease in overall score.",
+                    "Some other text sentence here....."
+                ]
+            ],
+            [
+                "20-06-2016",
+                [
+                    "Villagio Goa is on an all time low on aspect 'Room Service'.",
+                    "Aspect 'Cleanliness' is leading to a 2.0 decrease in overall score.",
+                    "Increase in score of Villagio Goa by 1.2 will increase overall score by 0.5."
+                ]
+            ],
+            [
+                "13-06-2016",
+                [
+                    "A few more insights!",
+                    "Here are some insights from last week",
+                    "Some more past insights"
+                ]
+            ],
+            [
+                "06-06-2016",
+                [
+                    "These are things you should have done, like, a decade ago.",
+                    "I hope you did them.",
+                    "You are a loser."
+                ]
+            ]
+        ],
+        "meta": {
+            "company": "Sterling Holidays Resort",
+            "created_by": "Not Applicable",
+            "id": "8NxZgAVK8eD5MBQjZda",
+            "total_resp": 506,
+            "unit_name": "Parent Survey"
+        },
+        "responses": [
+            {
+                "avg_rating": 76.64,
+                "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1",
+                "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?",
+                "options_count": {
+                    "10": 1,
+                    "4": 1,
+                    "7": 1,
+                    "8": 1
+                },
+                "timed": {
+                    "2016-06-17 18:29:21": {
+                        "pretty": "7",
+                        "raw": "a_7"
+                    },
+                    "2016-06-17 18:30:07": {
+                        "pretty": "4",
+                        "raw": "a_4"
+                    },
+                    "2016-06-17 18:43:43": {
+                        "pretty": "10",
+                        "raw": "a_10"
+                    },
+                    "2016-06-17 22:19:24": {
+                        "pretty": "8",
+                        "raw": "a_8"
+                    }
+                },
+                "timed_agg": {
+                    "2016-06-17": 7.25
+                }
+            },
+            {
+                "avg_rating": {
+                    "a_1": 3.75,
+                    "a_2": 3.87,
+                    "a_3": 4.02,
+                    "a_4": 3.47,
+                    "a_5": 4.06
+                },
+                "options_code": {
+                    "a_1": "Room Service",
+                    "a_2": "Cleanliness",
+                    "a_3": "Value For Money",
+                    "a_4": "Ambience",
+                    "a_5": "Amenities"
+                }
+            }
+        ],
+        "sentiment": {
+            "tripadvisor": {
+                "Negative": 43,
+                "Neutral": 88,
+                "Positive": 375,
+                "something": 1000,
+                "sentiment_segg": {
+                    "beach": 0.8907849829351536,
+                    "clean": 0.3856655290102389,
+                    "dindi": 0.25757575757575757,
+                    "family": 0.2081447963800905,
+                    "food": 0.6515837104072398,
+                    "goa": 0.7167235494880546,
+                    "godavari": 0.4166666666666667,
+                    "good": 1.0,
+                    "great": 0.22624434389140272,
+                    "hotel": 0.8506787330316742,
+                    "location": 0.22171945701357465,
+                    "manager": 0.21212121212121213,
+                    "manali": 0.5882352941176471,
+                    "mr": 0.22727272727272727,
+                    "nice": 0.31221719457013575,
+                    "place": 0.26244343891402716,
+                    "pond": 0.25757575757575757,
+                    "pool": 0.5255972696245734,
+                    "property": 0.3037542662116041,
+                    "resort": 0.8371040723981901
+                }
+            },
+            "zomato": {
+                "Negative": 50,
+                "Neutral": 40,
+                "Positive": 30,
+                "sentiment_segg": {}
+            }
+        }
+    },
+    "units": [
+        
+        {
+            "meta": {
+                "company": "Sterling Holidays Resort",
+                "created_by": "5757ace0cc38e39671947a27",
+                "id": "or8bQMxdBvrOqgW9JJ1",
+                "total_resp": 184,
+                "unit_name": "Manali, White Mist"
+            },
+            "responses": [
+                {
+                    "avg_rating": 74.64,
+                    "cid": "9ca9c60c-587c-4848-8002-31708b5dcbf1",
+                    "label": "How likely, on a scale of 0 to 10, are you to recommend our services to a friend or colleague?",
+                    "options_count": {
+                        "10": 1
+                    },
+                    "timed": {
+                        "2016-06-17 18:43:43": {
+                            "pretty": "10",
+                            "raw": "a_10"
+                        }
+                    },
+                    "timed_agg": {
+                        "2016-06-17": 10.0
+                    }
+                },
+                {
+                    "avg_rating": {
+                        "a_1": 3.46,
+                        "a_2": 3.91,
+                        "a_3": 3.84,
+                        "a_4": 3.49,
+                        "a_5": 3.96
+                    },
+                    "options_code": {
+                        "a_1": "Cleanliness",
+                        "a_2": "Room Service",
+                        "a_3": "Value For Money",
+                        "a_4": "Ambience",
+                        "a_5": "Amenities"
+                    }
+                }
+            ],
+            "sentiment": {}
+        }
+    ]
+}
