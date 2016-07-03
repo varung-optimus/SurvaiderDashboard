@@ -7,7 +7,7 @@
 
   var application = null;
 
-  var uri_dat = UriTemplate.extract('/survey/s:{s_id}/analysis?parent={parent}',
+  var uri_dat = UriTemplate.extract('/survey/{s_id}/analysis?parent={parent}',
     window.location.pathname + window.location.search + window.location.hash);
 
   var SURVEY_ID = uri_dat.s_id;
@@ -37,12 +37,14 @@
     var uri_dat = UriTemplate.extract('/survey/s:{s_id}/analysis?parent={parent}',
     window.location.pathname + window.location.search + window.location.hash);
     $scope.ParentId = uri_dat.s_id;
+
     if (uri_dat.parent) {
       $scope.isEditSurveyEnabled = true;
-
+      $scope.isParent = true;
     }
     else {
       $scope.isEditSurveyEnabled = false;
+      $scope.isParent = false;
     }
 
 
@@ -78,6 +80,7 @@
 
       function DialogController($scope, $mdDialog, $location) {
         // $scope.surveyUrl = $location.absUrl();
+        $scope.isParentSurvey = $location.search().parent;
         $scope.surveyUrl = 'http://survaider.com/survey/s:'+ uri_dat.s_id +'/simple';
         $scope.surveyName = application.companyName + ' - ' + application.unitName;
         $scope.hide = function() {
