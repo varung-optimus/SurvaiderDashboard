@@ -374,6 +374,7 @@
           case 'ranking':
             var rankingQuestion = data[i];
             setRankingQuestionQuestion();
+            console.log($scope.questions);
             break;
 
         }
@@ -804,8 +805,11 @@
               if (rankingQuestion['ranking_count'][key].hasOwnProperty(otherKey)) {
 
                 var theRating = rankingQuestion['ranking_count'][key][otherKey];
-
-                tempData.values.push( { mainValue: rankingQuestion['ranking_count'][key][otherKey]  });
+                console.log('Other key: ' + otherKey);
+                tempData.values.push( {
+                    mainValue: rankingQuestion['ranking_count'][key][otherKey],
+                    rankNum: otherKey
+                });
 
                 tempData.sumOfValues += theRating;
               }

@@ -520,17 +520,12 @@
 
 
                 <!-- Template:: RANKING QUESTION -->
-
                 <div ng-switch-when="ranking" ng-init="colors = ['#F0B24F', '#496063', '#6C6F3A'];">
-
                   <div class="star-rating-all-group">
-
                     <div class="group-rating-star-rating">
-
                       <div class="unit-question-header">
                         <h1 ng-bind="'Q' + ($index+1) + '  ' + question.label"></h1>
                       </div>
-
                     </div>
 
                     <div class="ranks-wrapper">
@@ -566,7 +561,7 @@
                               <!-- Stars -->
                               <g ng-repeat="value in choice.values track by $index">
 
-                                <rect ng-attr-width="{{value.width}}" ng-attr-x="{{value.xOfRext}}" height="40" ng-attr-fill="{{question.colors[$index]}}" />
+                                <rect ng-attr-width="{{value.width}}" ng-attr-x="{{value.xOfRext}}" height="40" ng-attr-fill="{{question.colors[value.rankNum - 1]}}" />
                                 <text ng-attr-x="{{value.xOfRext + (value.width/2) - 10}}" y="25" font-size="16px" font-weight="bold">
                                   {{value.mainValue}}
                                 </text>
